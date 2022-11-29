@@ -1,12 +1,127 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
-  </body>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Седона</title>
+  <link rel="icon" href="img/favicon_32x32px.png" sizes="32x32">
+</head>
+<body class="page__body">
+<header class="main-header">
+  <a class="main-header__logo">
+    <img src="img/logo/logo_sedona.svg" width="185" height="96" alt="Логотип «Седона».">
+  </a>
+  <nav class="main-navigation">
+    <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <ul class="main-navigation__list">
+      <li class="main-navigation__list-item main-navigation__list-item--active">
+        <a>Главная</a>
+      </li>
+      <li class="main-navigation__list-item">
+        <a href="catalog.html">Фото и видео</a>
+      </li>
+      <li class="main-navigation__list-item">
+        <a href="form.html">Форма отзыва</a>
+      </li>
+      <li class="main-navigation__list-item">
+        <a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="main-container">
+  <section class="hero">
+    <h1 class="hero__title visually-hidden">Добро пожаловать в Седону.</h1>
+    <img class="hero__image" src="img/index/welcome-phone.svg" alt="Добро пожаловать в Седону." width="282"
+          height="214">
+  </section>
+  <section class="intro">
+    <h2 class="intro__title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
+    <p class="intro__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+  </section>
+  <section class="advantages">
+    <h2 class="visually-hidden">Преимущества.</h2>
+    <ul class="advantages__list">
+      <li class="advantages__item advantages__item--large advantages__item--dark advantages__item--reverse">
+        <div class="advantages__container">
+          <img class="advantages__container-picture" src="img/index/sedona_small_town_800x384.jpg"
+                alt="Настоящий городок Седона." width="800" height="384" loading="lazy">
+        </div>
+        <div class="advantages__wrapper">
+          <h3 class="advantages__title">Настоящий городок</h3>
+          <p class="advantages__text">Седона &ndash; не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
+      </li>
+      <li class="advantages__item advantages__item--house">
+        <h3 class="advantages__title">Жильё</h3>
+        <p class="advantages__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      </li>
+      <li class="advantages__item advantages__item--food">
+        <h3 class="advantages__title">Еда</h3>
+        <p class="advantages__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+      </li>
+      <li class="advantages__item advantages__item--souvenir">
+        <h3 class="advantages__title">Сувениры</h3>
+        <p class="advantages__text">Не только китайского, но и местного производства!</p>
+      </li>
+      <li class="advantages__item advantages__item--dark advantages__item--large">
+        <div class="advantages__container">
+          <img class="advantages__container-picture" src="img/index/devil_bridge_800x384.jpg"
+                alt="Мост через Гранд-Каньон." width="800" height="384" loading="lazy">
+        </div>
+        <div class="advantages__wrapper">
+          <h3 class="advantages__title">Там есть <br/>мост дьявола</h3>
+          <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+      </li>
+    </ul>
+    <ul class="advantages__list advantages__list--conditions">
+      <li class="advantages__item advantages__item--wrapper">
+        <h3 class="advantages__title">Небольшая площадь</h3>
+        <p class="advantages__text">Все достопримечательности находятся очень близко</p>
+      </li>
+      <li class="advantages__item advantages__item--wrapper">
+        <h3 class="advantages__title">Красивая <br/>дорога</h3>
+        <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </li>
+      <li class="advantages__item advantages__item--wrapper">
+        <h3 class="advantages__title">Мало <br/>туристов</h3>
+        <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
+      </li>
+    </ul>
+  </section>
+  <section class="search-hotels" data-test="search">
+    <h2 class="search-hotels__title">Заинтересовались?</h2>
+    <p class="search-hotels__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+      гостиниц в седоне</p>
+    <button type="button" class="button button--primary button--search-hotels">Найти гостиницу</button>
+  </section>
+  <section class="map">
+    <h2 class="map__title">Карта Седоны.</h2>
+  </section>
+</main>
+<footer class="main-footer">
+  <div class="main-footer__tagline">#visitsedona</div>
+  <div class="main-footer__social social">
+    <span class="social__title visually-hidden">Давайте дружить!</span>
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте.</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме.</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе.</a>
+      </li>
+    </ul>
+  </div>
+  <div class="main-footer__copyright copyright">
+    <span class="copyright__text">Разработано</span>
+    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="visually-hidden">HTML Academy</span>
+    </a>
+  </div>
+</footer>
+</body>
 </html>
