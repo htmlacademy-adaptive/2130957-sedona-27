@@ -1,0 +1,7 @@
+@import "../global/colors";
+@import "../global/variables";
+
+.hero {
+  padding: $horizontal-padding-phone;
+  background-color: rgba(131, 179, 211, 0.5);
+}
