@@ -2,6 +2,12 @@
 @import "../global/variables";
 
 .main-header {
-  padding: $horizontal-padding-phone;
+  position: relative;
   background-color: $white-color;
+}
+
+.main-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
