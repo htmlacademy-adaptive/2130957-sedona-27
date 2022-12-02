@@ -2,5 +2,22 @@
 @import "../global/variables";
 
 .search-hotels {
+  padding: 38px 18px 49px;
+  text-align: center;
   background-color: $white-color;
+}
+
+.search-hotels__title {
+  margin: 0 0 23px;
+  padding: 0 9px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.search-hotels__description {
+  margin: 0 0 32px;
+  padding: 0 9px;
+  text-transform: uppercase;
 }

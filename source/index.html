@@ -13,7 +13,10 @@
     <img src="img/logo/logo_sedona.svg" width="185" height="96" alt="Логотип «Седона».">
   </a>
   <nav class="main-navigation">
-    <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <button class="main-navigation__toggle" type="button">
+      <span class="main-navigation__label"></span>
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
     <ul class="main-navigation__list">
       <li class="main-navigation__list-item main-navigation__list-item--active">
         <a>Главная</a>
@@ -40,7 +43,7 @@
     <h2 class="intro__title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p class="intro__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
   </section>
-  <section class="advantages wrapper">
+  <section class="advantages">
     <h2 class="visually-hidden">Преимущества.</h2>
     <ul class="advantages__list">
       <li class="advantages__item advantages__item--large advantages__item--dark advantages__item--reverse">
@@ -50,18 +53,18 @@
         </div>
         <div class="advantages__wrapper">
           <h3 class="advantages__title">Настоящий городок</h3>
-          <p class="advantages__text">Седона &ndash; не аттракцион для туристов, там течёт своя жизнь</p>
+          <p class="advantages__text">Седона &ndash; не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
       </li>
-      <li class="advantages__item advantages__item--house">
+      <li class="advantages__item advantages__wrapper advantages__item--house">
         <h3 class="advantages__title">Жильё</h3>
         <p class="advantages__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
       </li>
-      <li class="advantages__item advantages__item--food">
+      <li class="advantages__item advantages__wrapper advantages__item--food">
         <h3 class="advantages__title">Еда</h3>
         <p class="advantages__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
       </li>
-      <li class="advantages__item advantages__item--souvenir">
+      <li class="advantages__item advantages__wrapper advantages__item--souvenir">
         <h3 class="advantages__title">Сувениры</h3>
         <p class="advantages__text">Не только китайского, но и местного производства!</p>
       </li>
@@ -79,7 +82,7 @@
     <ul class="advantages__list advantages__list--conditions">
       <li class="advantages__item advantages__wrapper">
         <h3 class="advantages__title">Небольшая площадь</h3>
-        <p class="advantages__text">Все достопримечательности находятся очень близко</p>
+        <p class="advantages__text">Все интересные места находятся очень близко</p>
       </li>
       <li class="advantages__item advantages__wrapper">
         <h3 class="advantages__title">Красивая <br/>дорога</h3>
@@ -107,13 +110,13 @@
     <span class="social__title visually-hidden">Давайте дружить!</span>
     <ul class="social__list">
       <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте.</a>
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте.</span></a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме.</a>
+        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме.</span></a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе.</a>
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе.</span></a>
       </li>
     </ul>
   </div>
@@ -124,5 +127,6 @@
     </a>
   </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

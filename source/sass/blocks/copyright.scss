@@ -1,0 +1,12 @@
+@import "../global/colors";
+@import "../global/variables";
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright__text {
+  text-transform: uppercase;
+}

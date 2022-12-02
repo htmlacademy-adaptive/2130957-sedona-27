@@ -1,0 +1,18 @@
+@import "../global/colors";
+@import "../global/variables";
+
+.social__list {
+  display: grid;
+  grid-template-columns: 48px 48px 48px;
+  column-gap: 6px;
+  margin: 0 0 40px;
+  justify-content: center;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.social__link {
+  display: block;
+  height: 48px;
+  background-color: $primary-color;
+}
