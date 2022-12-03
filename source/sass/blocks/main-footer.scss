@@ -1,5 +1,6 @@
 @import "../global/colors";
 @import "../global/variables";
+@import "../global/mixins";
 
 .main-footer {
   padding-top: 28px;
@@ -10,8 +11,6 @@
 
 .main-footer__tagline {
   margin-bottom: 33px;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
+
+  @include title-m;
 }

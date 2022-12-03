@@ -1,5 +1,6 @@
 @import "../global/colors";
 @import "../global/variables";
+@import "../global/mixins";
 
 .advantages {
   background-color: $white-color;
@@ -29,7 +30,7 @@
 }
 
 .advantages__wrapper {
-  padding: 0 18px 25px;
+  padding: 0 20px 25px;
 }
 
 .advantages__wrapper:nth-child(2) {
@@ -41,15 +42,19 @@
 }
 
 .advantages__item-large .advantages__wrapper {
-  padding: 33px 18px 40px;
+  padding: 33px 20px 40px;
 }
 
 .advantages__title {
   margin: 0 0 17px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
+
+  @include title-s;
+}
+
+.advantages__item--dark {
+  .advantages__title {
+    color: $white-color;
+  }
 }
 
 .advantages__text {

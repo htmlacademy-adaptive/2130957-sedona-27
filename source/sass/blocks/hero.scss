@@ -10,4 +10,16 @@
   background-position: 50% 100%, 50% 25%;
   background-size: 172%, 285%;
   background-color: rgba(131, 179, 211, 0.5);
+
+  &--catalog {
+    padding-top: 53px;
+    padding-bottom: 67px;
+    background-position: 50% 100%, 50% 100%;
+  }
+
+  &--form {
+    padding-top: 52px;
+    padding-bottom: 68px;
+    background-position: 50% 100%, 50% 100%;
+  }
 }

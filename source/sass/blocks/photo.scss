@@ -4,3 +4,38 @@
 .photo {
   background-color: $white-color;
 }
+
+.photo__item {
+  padding: 24px 20px 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.photo__item:first-child {
+  border-top: 1px solid #e5e5e5;
+}
+
+.photo__list {
+  margin: 0;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.photo__item-media {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.photo__item-title {
+  margin: 0 0 8px;
+  font-weight: 700;
+  color: $black-color;
+  text-transform: uppercase;
+}
+
+.photo__item-description {
+  margin: 0 0 11px;
+}
+
+.photo__item-likes {
+  font-weight: 700;
+}
