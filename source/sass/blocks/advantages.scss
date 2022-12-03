@@ -51,10 +51,8 @@
   @include title-s;
 }
 
-.advantages__item--dark {
-  .advantages__title {
-    color: $white-color;
-  }
+.advantages__item--dark .advantages__title {
+  color: $white-color;
 }
 
 .advantages__text {
