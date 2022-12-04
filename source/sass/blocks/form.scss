@@ -1,0 +1,67 @@
+@import "../global/colors";
+@import "../global/variables";
+@import "../global/mixins";
+
+.form {
+  padding-bottom: 24px;
+  background-color: $white-color;
+}
+
+.form__container {
+  background-color: $white-color;
+}
+
+.form__group {
+  margin: 0;
+  padding: 24px 20px;
+  border: none;
+}
+
+.form__group:not(:last-of-type) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.form__group:first-child {
+  border-top: 1px solid #e5e5e5;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 1px;
+  text-transform: uppercase;
+}
+
+.form__group input {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $black-color;
+}
+
+.form__title {
+  margin: 0 0 20px;
+
+  @include title-s;
+}
+
+.form__comment {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  border: none;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.form__button-container {
+  padding: $hor-padding-s;
+}
+
+.form__caption {
+  font-size: 12px;
+  line-height: 21px;
+  text-align: right;
+  color: rgba(51, 51, 51, 0.6);
+}

@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+@use "global/fonts";
+@use "global/visually-hidden";
+@use "global/variables";
+@use "global/mixins";
+@use "global/colors";
+@use "blocks/page";
+@use "blocks/wrapper";
+@use "blocks/main-header";
+@use "blocks/main-navigation";
+@use "blocks/main-footer";
+@use "blocks/social";
+@use "blocks/copyright";
+@use "blocks/main-container";
+@use "blocks/hero";
+@use "blocks/intro";
+@use "blocks/advantages";
+@use "blocks/search-hotels";
+@use "blocks/map";
+@use "blocks/button";
+@use "blocks/photo";
+@use "blocks/video";
+@use "blocks/form";
+@use "blocks/control";

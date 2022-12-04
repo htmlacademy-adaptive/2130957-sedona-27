@@ -4,15 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Форма отзыва</title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/favicon_32x32px.png" sizes="32x32">
 </head>
 <body class="page__body">
-<header class="main-header">
+<header class="main-header wrapper">
   <a class="main-header__logo" href="index.html">
     <img src="img/logo/logo_sedona.svg" width="185" height="96" alt="Логотип «Седона».">
   </a>
   <nav class="main-navigation">
-    <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <button class="main-navigation__toggle" type="button">
+      <span class="main-navigation__label"></span>
+      <span class="visually-hidden">Открыть меню.</span>
+    </button>
     <ul class="main-navigation__list">
       <li class="main-navigation__list-item">
         <a href="index.html">Главная</a>
@@ -30,34 +34,36 @@
   </nav>
 </header>
 <main class="main-container">
-  <section class="hero">
+  <section class="hero hero--form wrapper">
     <h1 class="hero__title visually-hidden">Форма отзыва.</h1>
-    <img class="hero__image" src="img/logo/logo_sedona_inner-phone.svg" alt="Добро пожаловать в Седону." width="229"
-          height="39">
+    <img class="hero__image" src="img/logo/logo_sedona_inner-phone.svg" alt="Добро пожаловать в Седону." width="229" height="39">
   </section>
-  <section class="intro">
+  <section class="intro intro--form wrapper">
     <h2 class="intro__title">Оставьте свой отзыв</h2>
     <p class="intro__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
       достопримечательностях</p>
-    <form class="intro__form form" action="https://echo.htmlacademy.ru/" method="post">
+  </section>
+  <section class="form">
+    <h2 class="form__title visually-hidden">Заполните форму.</h2>
+    <form class="form__container" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="form__group">
-        <legend class="form__legend">Представтесь:</legend>
-        <label for="first-name">Имя<sup>*</sup>:</label>
+        <h3 class="form__title">Представьтесь:</h3>
+        <label class="form__label" for="first-name">Имя<sup>*</sup>:</label>
         <input id="first-name" name="first-name" type="text" placeholder="Введите имя" required>
-        <label for="last-name">Фамилия<sup>*</sup>:</label>
+        <label class="form__label" for="last-name">Фамилия<sup>*</sup>:</label>
         <input id="last-name" name="last-name" type="text" placeholder="Введите фамилию" required>
-        <label for="patronymic">Отчество:</label>
+        <label class="form__label" for="patronymic">Отчество:</label>
         <input id="patronymic" name="patronymic" type="text" placeholder="Введите отчество">
       </fieldset>
       <fieldset class="form__group">
-        <legend class="form__legend">Контактная информация:</legend>
-        <label for="phone-number">Контактный телефон<sup>*</sup>:</label>
+        <h3 class="form__title">Контактная информация:</h3>
+        <label class="form__label" for="phone-number">Контактный телефон<sup>*</sup>:</label>
         <input id="phone-number" name="phone-number" type="text" placeholder="Введите телефон" required>
-        <label for="email">Электронная почта<sup>*</sup>:</label>
+        <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
         <input id="email" name="email" type="email" placeholder="Введите e-mail" required>
       </fieldset>
       <fieldset class="form__group">
-        <legend class="form__legend">Ваше общее впечатление:</legend>
+        <h3 class="form__title">Ваше общее впечатление:</h3>
         <ul class="form__list form__list--radio">
           <li class="form__item">
             <label class="form__control control">
@@ -83,7 +89,7 @@
         </ul>
       </fieldset>
       <fieldset class="form__group">
-        <legend class="form__legend">Посещенные достопримечательности:</legend>
+        <h3 class="form__title">Посещенные достопримечательности:</h3>
         <ul class="form__list form__list--checkbox">
           <li class="form__item">
             <label class="form__control control">
@@ -116,28 +122,31 @@
         </ul>
       </fieldset>
       <fieldset class="form__group">
-        <legend class="form__legend">Опишите свои эмоции:</legend>
+        <h3 class="form__title">Опишите свои эмоции:</h3>
         <label class="visually-hidden" for="comment">Опишите свои эмоции</label>
-        <textarea id="comment" name="comment" rows="5">Опишите подробно все свои восторги</textarea>
+        <textarea class="form__comment" id="comment" name="comment" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
-      <button class="button button--primary button--form" type="submit">Отправить отзыв</button>
-      <div class="form__caption">* &mdash; обязательные поля</div>
+      <div class="form__button-container">
+        <button class="button button--primary button--form" type="submit">Отправить отзыв</button>
+        <div class="form__caption">* &mdash; обязательные поля</div>
+      </div>
     </form>
   </section>
 </main>
-<footer class="main-footer">
+<footer class="main-footer wrapper">
   <div class="main-footer__tagline">#visitsedona</div>
   <div class="main-footer__social social">
     <span class="social__title visually-hidden">Давайте дружить!</span>
     <ul class="social__list">
       <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте.</a>
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте.</span></a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме.</a>
+        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме.</span></a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе.</a>
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span
+          class="visually-hidden">Мы в Ютубе.</span></a>
       </li>
     </ul>
   </div>
@@ -148,5 +157,6 @@
     </a>
   </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

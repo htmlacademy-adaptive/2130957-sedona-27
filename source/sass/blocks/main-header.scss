@@ -1,0 +1,14 @@
+@import "../global/colors";
+@import "../global/variables";
+
+.main-header {
+  position: relative;
+  min-height: 56px;
+  background-color: $white-color;
+}
+
+.main-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

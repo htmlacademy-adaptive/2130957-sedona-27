@@ -1,0 +1,81 @@
+@import "../global/colors";
+@import "../global/variables";
+@import "../global/mixins";
+
+.advantages {
+  background-color: $white-color;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.advantages__item {
+  width: 100%;
+
+  &--dark {
+    color: $white-color;
+    background-color: $primary-color;
+  }
+
+  &--large {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+.advantages__wrapper {
+  padding: 0 20px 25px;
+}
+
+.advantages__wrapper:nth-child(4) {
+  padding-bottom: 46px;
+}
+
+.advantages__item--large .advantages__wrapper {
+  padding: 37px 20px;
+}
+
+.advantages__item--large:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.advantages__item--dark:first-child {
+  background-image: url("../img/index/divider_top.svg");
+  background-repeat: no-repeat;
+  background-position: 50% -10%;
+  background-size: initial;
+}
+
+.advantages__title {
+  margin: 0 0 16px;
+
+  @include title-s;
+}
+
+.advantages__item--dark .advantages__title {
+  color: $white-color;
+}
+
+.advantages__text {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.advantages__list--conditions .advantages__item {
+  text-align: center;
+  background-color: $gray-color;
+}
+
+.advantages__list--conditions .advantages__wrapper {
+  padding: 24px 18px;
+}
+
+.advantages__list--conditions .advantages__wrapper:last-child {
+  padding-bottom: 28px;
+}

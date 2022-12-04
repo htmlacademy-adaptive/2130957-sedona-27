@@ -1,0 +1,16 @@
+@import "../global/colors";
+@import "../global/variables";
+@import "../global/mixins";
+
+.main-footer {
+  padding-top: 28px;
+  padding-bottom: 23px;
+  text-align: center;
+  background-color: $white-color;
+}
+
+.main-footer__tagline {
+  margin-bottom: 33px;
+
+  @include title-m;
+}

@@ -1,0 +1,22 @@
+@import "../global/colors";
+@import "../global/variables";
+@import "../global/mixins";
+
+.search-hotels {
+  padding: 38px 18px 49px;
+  text-align: center;
+  background-color: $white-color;
+}
+
+.search-hotels__title {
+  margin: 0 0 23px;
+  padding: 0 9px;
+
+  @include title-m;
+}
+
+.search-hotels__description {
+  margin: 0 0 32px;
+  padding: 0 9px;
+  text-transform: uppercase;
+}
