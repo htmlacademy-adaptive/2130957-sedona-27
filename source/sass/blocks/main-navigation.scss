@@ -52,6 +52,10 @@
       border: none;
       box-shadow: none;
     }
+
+    @media (min-width: 1200px) {
+      width: 220px;
+    }
   }
 
   &--active a {
@@ -61,6 +65,7 @@
     @media (min-width: 768px) {
       color: #766357;
       background-color: inherit;
+      border-top: none;
     }
   }
 

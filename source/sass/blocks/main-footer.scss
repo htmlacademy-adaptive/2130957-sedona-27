@@ -7,6 +7,10 @@
   padding-bottom: 23px;
   text-align: center;
   background-color: colors.$white-color;
+
+  @media (width: 768px) {
+    padding: 36px 0;
+  }
 }
 
 .main-footer__wrapper {
@@ -15,7 +19,11 @@
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
-    padding: 36px 45px;
+    padding: 0 45px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 104px;
   }
 }
 
@@ -28,5 +36,9 @@
     width: 166px;
     margin-right: 97px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 254px;
   }
 }

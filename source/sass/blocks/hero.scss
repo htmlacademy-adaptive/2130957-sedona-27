@@ -17,6 +17,11 @@
     background-size: 158%, 158%;
   }
 
+  @media (min-width: 1200px) {
+    padding: 78px 0 84px;
+    background-size: 100%, 100%;
+  }
+
   &--catalog {
     padding-top: 53px;
     padding-bottom: 67px;
