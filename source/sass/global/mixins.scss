@@ -31,3 +31,11 @@
   font-size: 30px;
   line-height: 36px;
 }
+
+@mixin padding-0-18 {
+  padding: 0 18px;
+}
+
+@mixin padding-0-20 {
+  padding: 0 20px;
+}

@@ -1,5 +1,6 @@
-@import "../global/colors";
-@import "../global/variables";
+@use "../global/variables";
+@use "../global/mixins";
+@use "../global/colors";
 
 .copyright {
   display: flex;
@@ -9,5 +10,5 @@
 
 .copyright__text {
   text-transform: uppercase;
-  color: $black-color;
+  color: colors.$black-color;
 }

@@ -1,5 +1,6 @@
-@import "../global/colors";
-@import "../global/variables";
+@use "../global/variables";
+@use "../global/mixins";
+@use "../global/colors";
 
 .main-navigation {
   top: 0;
@@ -31,8 +32,8 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
-    color: $white-color;
-    background-color: $primary-color;
+    color: colors.$white-color;
+    background-color: colors.$primary-color;
     text-transform: uppercase;
     text-decoration: none;
     box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
@@ -46,16 +47,16 @@
       font-size: 14px;
       line-height: 21px;
       text-align: center;
-      color: $black-color;
-      background-color: $white-color;
+      color: colors.$black-color;
+      background-color: colors.$white-color;
       border: none;
       box-shadow: none;
     }
   }
 
   &--active a {
-    background-color: $gray-dark;
-    border-top: 1px solid $gray-dark;
+    background-color: colors.$gray-dark;
+    border-top: 1px solid colors.$gray-dark;
 
     @media (min-width: 768px) {
       color: #766357;
@@ -72,6 +73,7 @@
   position: absolute;
   top: 17px;
   right: 20px;
+  display: none;
   width: 22px;
   height: 22px;
   padding: 0;
@@ -80,7 +82,14 @@
   box-sizing: border-box;
 
   @media (min-width: 768px) {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
 
@@ -88,7 +97,7 @@
   position: relative;
   display: block;
   height: 4px;
-  background-color: $primary-color;
+  background-color: colors.$primary-color;
 
   &::before,
   &::after {
@@ -97,7 +106,7 @@
     left: 0;
     width: 22px;
     height: 4px;
-    background-color: $primary-color;
+    background-color: colors.$primary-color;
   }
 
   &::before {
@@ -123,7 +132,7 @@
       left: -2px;
       width: 26px;
       height: 4px;
-      background: $white-color;
+      background: colors.$white-color;
       transform-origin: 50% 50%;
     }
 

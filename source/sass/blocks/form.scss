@@ -1,28 +1,61 @@
-@import "../global/colors";
-@import "../global/variables";
-@import "../global/mixins";
+@use "../global/variables";
+@use "../global/mixins";
+@use "../global/colors";
 
 .form {
   padding-bottom: 24px;
-  background-color: $white-color;
+  background-color: colors.$white-color;
+
+  @media (min-width: 768px) {
+    padding: 0 60px 64px;
+  }
 }
 
 .form__container {
-  background-color: $white-color;
+  background-color: colors.$white-color;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .form__group {
   margin: 0;
   padding: 24px 20px;
   border: none;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    padding: 0 0 48px;
+    width: 100%;
+  }
 }
 
 .form__group:not(:last-of-type) {
   border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: 768px) {
+    border-bottom: none;
+  }
 }
 
 .form__group:first-child {
   border-top: 1px solid #e5e5e5;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    padding: 0 43px 15px 0;
+    border-top: 0;
+    border-right: 1px solid #e5e5e5;
+  }
+}
+
+.form__group:nth-child(2) {
+  @media (min-width: 768px) {
+    width: 50%;
+    padding-left: 26px;
+  }
 }
 
 .form__label {
@@ -35,13 +68,13 @@
   font-size: 18px;
   line-height: 21px;
   font-weight: 700;
-  color: $black-color;
+  color: colors.$black-color;
 }
 
 .form__title {
   margin: 0 0 20px;
 
-  @include title-s;
+  @include mixins.title-s;
 }
 
 .form__comment {
@@ -56,7 +89,7 @@
 }
 
 .form__button-container {
-  padding: $hor-padding-s;
+  padding: variables.$hor-padding-s;
 }
 
 .form__caption {

@@ -1,9 +1,10 @@
-@import "../global/colors";
-@import "../global/variables";
+@use "../global/variables";
+@use "../global/mixins";
+@use "../global/colors";
 
 .map {
   padding-bottom: 10px;
-  background-color: $white-color;
+  background-color: colors.$white-color;
 
   @media (min-width: 768px) {
     padding-bottom: 0;

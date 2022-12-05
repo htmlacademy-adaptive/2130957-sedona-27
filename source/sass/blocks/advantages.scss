@@ -1,9 +1,9 @@
-@import "../global/colors";
-@import "../global/variables";
-@import "../global/mixins";
+@use "../global/variables";
+@use "../global/mixins";
+@use "../global/colors";
 
 .advantages {
-  background-color: $white-color;
+  background-color: colors.$white-color;
 }
 
 .advantages__list {
@@ -18,8 +18,8 @@
   width: 100%;
 
   &--dark {
-    color: $white-color;
-    background-color: $primary-color;
+    color: colors.$white-color;
+    background-color: colors.$primary-color;
   }
 
   &--large {
@@ -62,15 +62,15 @@
 .advantages__title {
   margin: 0 0 16px;
 
-  @include title-s;
+  @include mixins.title-s;
 
   @media (min-width: 768px) {
-    @include title-tablet-m;
+    @include mixins.title-tablet-m;
   }
 }
 
 .advantages__item--dark .advantages__title {
-  color: $white-color;
+  color: colors.$white-color;
 }
 
 .advantages__text {
@@ -81,7 +81,7 @@
 .advantages__list--conditions .advantages__item {
   position: relative;
   text-align: center;
-  background-color: $gray-color;
+  background-color: colors.$gray-color;
 
   &:not(:last-child)::after {
     content: "";

@@ -1,35 +1,59 @@
-@import "../global/colors";
-@import "../global/variables";
-@import "../global/mixins";
+@use "../global/variables";
+@use "../global/mixins";
+@use "../global/colors";
 
 .intro {
   padding-top: 32px;
   padding-bottom: 16px;
   text-align: center;
-  background-color: $white-color;
+  background-color: colors.$white-color;
+
+  @media (min-width: 768px) {
+    padding: 47.5px 124px 55.5px;
+  }
 
   &--catalog {
-    padding-top: 37px;
-    padding-bottom: 37px;
+    padding: 37px 0 25px;
+
+    @media (min-width: 768px) {
+      padding: 66px 155px 67px;
+    }
   }
 
   &--form {
     padding-top: 36px;
     padding-bottom: 24px;
-  }
 
-  @media (min-width: 768px) {
-    padding: 47.5px 124px 55.5px;
+    @media (min-width: 768px) {
+      padding: 64px 166px 103px;
+    }
   }
 }
 
 .intro__title {
   margin: 0 0 35px;
 
-  @include title-s;
+  @include mixins.title-s;
 }
 
 .intro__subtitle {
   margin: 0;
   text-transform: uppercase;
+}
+
+.intro__wrapper {
+  @include mixins.padding-0-18;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+}
+
+.intro--form .intro__wrapper,
+.intro--catalog .intro__wrapper {
+  @include mixins.padding-0-20;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }
