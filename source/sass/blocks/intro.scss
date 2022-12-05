@@ -17,6 +17,10 @@
     padding-top: 36px;
     padding-bottom: 24px;
   }
+
+  @media (min-width: 768px) {
+    padding: 47.5px 124px 55.5px;
+  }
 }
 
 .intro__title {

@@ -6,6 +6,11 @@
   padding: 38px 18px 49px;
   text-align: center;
   background-color: $white-color;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    padding: 61px 155px 58px;
+  }
 }
 
 .search-hotels__title {
@@ -13,6 +18,10 @@
   padding: 0 9px;
 
   @include title-m;
+
+  @media (min-width: 768px) {
+    @include title-tablet-l;
+  }
 }
 
 .search-hotels__description {

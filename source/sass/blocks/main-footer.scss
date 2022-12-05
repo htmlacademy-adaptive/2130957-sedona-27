@@ -7,10 +7,22 @@
   padding-bottom: 23px;
   text-align: center;
   background-color: $white-color;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding: 36px 45px;
+  }
 }
 
 .main-footer__tagline {
   margin-bottom: 33px;
 
   @include title-m;
+
+  @media (min-width: 768px) {
+    width: 166px;
+    margin-right: 97px;
+    margin-bottom: 0;
+  }
 }

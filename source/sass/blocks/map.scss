@@ -4,6 +4,10 @@
 .map {
   padding-bottom: 10px;
   background-color: $white-color;
+
+  @media (min-width: 768px) {
+    padding-bottom: 0;
+  }
 }
 
 .map__container {

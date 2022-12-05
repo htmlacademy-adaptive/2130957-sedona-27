@@ -2,4 +2,9 @@
 
 .wrapper {
   padding: $hor-padding-s;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }

@@ -13,3 +13,21 @@
   color: #000000;
   text-transform: uppercase;
 }
+
+@mixin title-l {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@mixin title-tablet-m {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+@mixin title-tablet-l {
+  font-size: 30px;
+  line-height: 36px;
+}
