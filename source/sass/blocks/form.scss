@@ -66,6 +66,7 @@
 
 .form__group input {
   font-size: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 21px;
   font-weight: 700;
   color: colors.$black-color;
@@ -75,6 +76,10 @@
   margin: 0 0 20px;
 
   @include mixins.title-s;
+
+  @media (min-width: 768px) {
+    @include mixins.title-tablet-m;
+  }
 }
 
 .form__comment {
