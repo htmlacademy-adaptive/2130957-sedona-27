@@ -7,7 +7,7 @@
   left: 0;
   right: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet-width) {
     position: relative;
   }
 }
@@ -18,7 +18,7 @@
   list-style-type: none;
   padding-inline-start: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet-width) {
     display: flex;
   }
 }
@@ -41,7 +41,7 @@
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
     box-sizing: border-box;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet-width) {
       width: 133px;
       padding: 18px 0 17px;
       font-size: 14px;
@@ -53,7 +53,7 @@
       box-shadow: none;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: variables.$desktop-width) {
       width: 220px;
     }
   }
@@ -62,14 +62,14 @@
     background-color: colors.$gray-dark;
     border-top: 1px solid colors.$gray-dark;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet-width) {
       color: #766357;
       background-color: inherit;
       border-top: none;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet-width) {
     padding: 0 10px;
   }
 }
@@ -86,7 +86,7 @@
   border: none;
   box-sizing: border-box;
 
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet-width) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -153,7 +153,7 @@
 }
 
 .main-navigation__list-item:nth-child(2) {
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet-width) {
     margin-right: auto;
   }
 }

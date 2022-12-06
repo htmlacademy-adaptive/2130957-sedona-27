@@ -13,7 +13,7 @@
   left: 50%;
   transform: translateX(-50%);
 
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet-width) {
     z-index: 2;
   }
 }

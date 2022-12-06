@@ -53,7 +53,7 @@
   background-position: 50% -1%;
   background-size: initial;
 
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet-width) {
     padding-top: 0;
     background-image: none;
   }
@@ -64,7 +64,7 @@
 
   @include mixins.title-s;
 
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet-width) {
     @include mixins.title-tablet-m;
   }
 }
@@ -92,7 +92,7 @@
     height: 1px;
     background-color: #d6d6d6;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet-width) {
       height: 0;
     }
   }

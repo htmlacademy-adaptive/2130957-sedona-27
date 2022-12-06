@@ -8,22 +8,22 @@
   text-align: center;
   background-color: colors.$white-color;
 
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet-width) {
     padding: 47.5px 124px 55.5px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: variables.$desktop-width) {
     padding: 58px 357px 44px;
   }
 
   &--catalog {
     padding: 37px 0 25px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet-width) {
       padding: 66px 155px 67px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: variables.$desktop-width) {
       padding: 100px 370px 65px;
     }
   }
@@ -32,11 +32,11 @@
     padding-top: 36px;
     padding-bottom: 24px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet-width) {
       padding: 64px 166px 103px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: variables.$desktop-width) {
       padding: 115px 382px 67px;
     }
   }
@@ -47,7 +47,7 @@
 
   @include mixins.title-s;
 
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet-width) {
     @include mixins.title-tablet-m;
   }
 }
@@ -60,7 +60,7 @@
 .intro__wrapper {
   @include mixins.padding-0-18;
 
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet-width) {
     padding: 0;
   }
 }
@@ -69,14 +69,14 @@
 .intro--catalog .intro__wrapper {
   @include mixins.padding-0-20;
 
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet-width) {
     padding: 0;
   }
 }
 
 .intro--catalog .intro__title,
 .intro--form .intro__title {
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet-width) {
     @include mixins.title-tablet-l;
   }
 }
