@@ -10,4 +10,3 @@ mainNavigation.classList.remove('main-navigation--active');
 mainNavigationToggle.onclick = function () {
   mainNavigation.classList.toggle('main-navigation--active');
 };
-
