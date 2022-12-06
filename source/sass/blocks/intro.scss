@@ -22,6 +22,10 @@
     @media (min-width: 768px) {
       padding: 66px 155px 67px;
     }
+
+    @media (min-width: 1200px) {
+      padding: 100px 370px 65px;
+    }
   }
 
   &--form {
@@ -30,6 +34,10 @@
 
     @media (min-width: 768px) {
       padding: 64px 166px 103px;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 115px 382px 67px;
     }
   }
 }

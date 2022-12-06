@@ -9,6 +9,10 @@
   @media (min-width: 768px) {
     padding: 0 60px 64px;
   }
+
+  @media (min-width: 1200px) {
+    padding: 0 120px 64px;
+  }
 }
 
 .form__container {
@@ -56,6 +60,10 @@
     width: 50%;
     padding-left: 26px;
   }
+
+  @media (min-width: 1200px) {
+    padding-left: 64px;
+  }
 }
 
 .form__label {
@@ -95,6 +103,16 @@
 
 .form__button-container {
   padding: variables.$hor-padding-s;
+
+  @media (min-width: 768px) {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    * {
+      width: 50%;
+    }
+  }
 }
 
 .form__caption {

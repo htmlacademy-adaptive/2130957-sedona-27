@@ -30,6 +30,10 @@
     @media (min-width: 768px) {
       padding: 95px 0 117px;
     }
+
+    @media (min-width: 1200px) {
+      padding: 101px 0 114px;
+    }
   }
 
   &--form {
@@ -39,6 +43,10 @@
 
     @media (min-width: 768px) {
       padding: 95px 0 117px;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 101px 0 114px;
     }
   }
 }
