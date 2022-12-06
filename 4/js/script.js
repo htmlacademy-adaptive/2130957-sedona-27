@@ -6,8 +6,7 @@ let mainHeader = document.querySelector('.main-header');
 mainHeader.style.minHeight = "56px";
 mainHeaderLogo.style.top = "0";
 mainNavigationToggle.style.display = "block";
-mainNavigation.style.position = "absolute";
 mainNavigation.classList.remove('main-navigation--active');
 mainNavigationToggle.onclick = function () {
   mainNavigation.classList.toggle('main-navigation--active');
-}
+};

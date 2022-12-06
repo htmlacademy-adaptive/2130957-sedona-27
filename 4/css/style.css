@@ -189,6 +189,15 @@
   top: 10px;
 }
 
+.main-navigation--active.main-navigation {
+  position: absolute;
+}
+@media (min-width: 768px) {
+  .main-navigation--active.main-navigation {
+    position: relative;
+  }
+}
+
 .main-navigation--active .main-navigation__list {
   display: flex;
   flex-direction: column;
