@@ -44,17 +44,24 @@
 
 .main-header {
   position: relative;
-  min-height: 56px;
+  min-height: 304px;
   background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .main-header {
+    min-height: 56px;
+  }
 }
 
 .main-header__logo {
   position: absolute;
+  top: 248px;
   left: 50%;
   transform: translateX(-50%);
 }
 @media (min-width: 768px) {
   .main-header__logo {
+    top: 0;
     z-index: 2;
   }
 }
@@ -183,7 +190,13 @@
 }
 
 .main-navigation--active .main-navigation__list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .main-navigation--active .main-navigation__list {
+    flex-direction: row;
+  }
 }
 .main-navigation--active .main-navigation__label {
   background-color: transparent;
