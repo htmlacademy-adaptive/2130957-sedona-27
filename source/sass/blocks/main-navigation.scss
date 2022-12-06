@@ -125,7 +125,12 @@
 
 .main-navigation--active {
   .main-navigation__list {
-    display: block;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: variables.$tablet-width) {
+      flex-direction: row;
+    }
   }
 
   .main-navigation__label {
