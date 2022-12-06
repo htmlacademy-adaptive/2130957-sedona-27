@@ -123,6 +123,14 @@
   }
 }
 
+.main-navigation--active.main-navigation {
+  position: absolute;
+
+  @media (min-width: variables.$tablet-width) {
+    position: relative;
+  }
+}
+
 .main-navigation--active {
   .main-navigation__list {
     display: flex;
