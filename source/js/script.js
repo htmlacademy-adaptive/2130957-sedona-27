@@ -18,10 +18,6 @@ for (let heart of hearts) {
     } else {
       heart.textContent++;
     }
-
     heart.classList.toggle('photo__item-liked');
   };
-
-
 }
-
