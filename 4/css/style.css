@@ -86,7 +86,14 @@
 }
 @media (min-width: 768px) {
   .main-navigation__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: 153px 153px 1fr 153px 153px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-navigation__list {
+    display: grid;
+    grid-template-columns: 240px 240px 1fr 240px 240px;
   }
 }
 
@@ -226,8 +233,9 @@
 }
 
 @media (min-width: 768px) {
-  .main-navigation__list-item:nth-child(2) {
-    margin-right: auto;
+  .main-navigation__list-item:nth-child(4n+3) {
+    justify-self: end;
+    grid-column-start: 4;
   }
 }
 
