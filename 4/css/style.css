@@ -756,7 +756,7 @@
 }
 @media (min-width: 1200px) {
   .photo__item {
-    width: 33.33%;
+    width: 400px;
   }
 }
 
