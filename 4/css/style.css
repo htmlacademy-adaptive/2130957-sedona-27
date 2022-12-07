@@ -310,20 +310,36 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 48px;
   background-color: #81b3d2;
 }
 
+.social__icon path {
+  fill: #ffffff;
+}
+
 .copyright {
+  display: block;
+}
+
+.copyright__link {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .copyright__text {
   text-transform: uppercase;
   color: #000000;
+  margin-right: 12px;
+}
+
+.copyright__icon path {
+  fill: #000000;
 }
 
 .main-container {
