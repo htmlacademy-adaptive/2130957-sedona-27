@@ -21,7 +21,13 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 48px;
   background-color: colors.$primary-color;
+}
+
+.social__icon path {
+  fill: colors.$white-color;
 }
