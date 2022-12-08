@@ -1,16 +1,44 @@
-@import "../global/colors";
-@import "../global/variables";
-@import "../global/mixins";
+@use "../global/variables";
+@use "../global/mixins";
+@use "../global/colors";
 
 .main-footer {
   padding-top: 28px;
   padding-bottom: 23px;
   text-align: center;
-  background-color: $white-color;
+  background-color: colors.$white-color;
+
+  @media (width: variables.$tablet-width) {
+    padding: 36px 0;
+  }
+}
+
+.main-footer__wrapper {
+  @include mixins.padding-0-18;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    align-items: center;
+    padding: 0 45px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 104px;
+  }
 }
 
 .main-footer__tagline {
   margin-bottom: 33px;
 
-  @include title-m;
+  @include mixins.title-m;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 166px;
+    margin-right: 97px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-right: 254px;
+  }
 }

@@ -1,12 +1,24 @@
-@import "../global/colors";
-@import "../global/variables";
+@use "../global/variables";
+@use "../global/mixins";
+@use "../global/colors";
 
 .copyright {
+  display: block;
+}
+
+.copyright__link {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .copyright__text {
   text-transform: uppercase;
+  color: colors.$black-color;
+  margin-right: 12px;
+}
+
+.copyright__icon path {
+  fill: colors.$black-color;
 }

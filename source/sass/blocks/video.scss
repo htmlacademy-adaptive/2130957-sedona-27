@@ -1,20 +1,64 @@
-@import "../global/colors";
-@import "../global/variables";
-@import "../global/mixins";
+@use "../global/variables";
+@use "../global/mixins";
+@use "../global/colors";
 
 .video {
   padding-top: 17px;
   text-align: center;
-  background-color: $white-color;
+  background-color: colors.$white-color;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 60px 40px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 199px 92px;
+  }
+}
+
+.video__wrapper {
+  @include mixins.padding-0-20;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+  }
 }
 
 .video__title {
   margin: 0 0 33px;
 
-  @include title-s;
+  @include mixins.title-s;
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.title-tablet-l;
+  }
 }
 
 .video__description {
   margin: 0 0 38px;
   text-transform: uppercase;
+}
+
+.video__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 23px);
+    bottom: calc(50% - 23px);
+    margin: auto;
+    border: 48px solid transparent;
+    border-top-width: 28px;
+    border-bottom-width: 28px;
+    border-left-color: rgba(colors.$white-color, 70%);
+    border-right: 0;
+    cursor: pointer;
+  }
+}
+
+.video__thumbnail {
+  display: block;
 }
