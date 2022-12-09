@@ -48,6 +48,19 @@
     transition: all 0.2s ease-in-out;
     box-sizing: border-box;
 
+    &:hover {
+      background-color: colors.$primary-color-hover;
+    }
+
+    &:focus {
+      background-color: colors.$primary-color-hover;
+    }
+
+    &:active {
+      color: rgba(colors.$white-color, 30%);
+      background-color: colors.$primary-color-active;
+    }
+
     @media (min-width: variables.$tablet-width) {
       width: 133px;
       padding: 18px 0 17px;
@@ -62,14 +75,17 @@
 
       &:hover {
         color: colors.$primary-color;
+        background-color: transparent;
       }
 
       &:focus {
         color: colors.$primary-color;
+        background-color: transparent;
       }
 
       &:active {
-        color: rgba(#000000, 30%);
+        color: rgba(colors.$black-color, 30%);
+        background-color: transparent;
       }
     }
 
@@ -117,6 +133,7 @@
   &:hover {
     opacity: 0.6;
   }
+
   &:focus {
     opacity: 0.6;
   }
@@ -203,4 +220,3 @@
     grid-column-start: 4;
   }
 }
-

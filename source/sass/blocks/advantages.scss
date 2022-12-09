@@ -43,7 +43,7 @@
 }
 
 .advantages__wrapper {
-  padding: 0 18px 25px;
+  padding: 8px 18px 25px;
   box-sizing: border-box;
 
   @media (min-width: variables.$tablet-width) {
@@ -73,7 +73,7 @@
 
   @media (min-width: variables.$tablet-width) {
     width: calc(100% / 3);
-    padding: 42px 33px 41px;
+    padding: 42px 27px 41px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -90,10 +90,10 @@
 }
 
 .advantages__item--dark:first-child {
-  padding-top: 17px;
+  padding-top: 33px;
   background-image: url("../img/index/divider_top.svg");
   background-repeat: no-repeat;
-  background-position: 50% -1%;
+  background-position: 50% 0;
   background-size: initial;
 
   @media (min-width: variables.$tablet-width) {
@@ -110,10 +110,58 @@
   @media (min-width: variables.$tablet-width) {
     @include mixins.title-tablet-m;
   }
+
+  &--1 {
+    &::after {
+      content: "— №1 —";
+
+      @include mixins.advantages-title-after;
+    }
+  }
+
+  &--2 {
+    &::after {
+      content: "— №2 —";
+
+      @include mixins.advantages-title-after;
+    }
+  }
+
+  &--3 {
+    &::after {
+      content: "— №3 —";
+
+      @include mixins.advantages-title-after;
+    }
+  }
+
+  &--4 {
+    &::after {
+      content: "— №4 —";
+
+      @include mixins.advantages-title-after;
+    }
+  }
+
+  &--5 {
+    &::after {
+      content: "— №5 —";
+
+      @include mixins.advantages-title-after;
+    }
+  }
 }
 
 .advantages__item--dark .advantages__title {
   color: colors.$white-color;
+
+  &--1::after,
+  &--2::after,
+  &--3::after,
+  &--4::after,
+  &--5::after {
+    color: colors.$white-color;
+  }
 }
 
 .advantages__text {
@@ -142,7 +190,7 @@
 }
 
 .advantages__list--conditions .advantages__wrapper {
-  padding: 24px 18px;
+  padding: 24px 34px;
 
   @media (min-width: variables.$tablet-width) {
     padding: 52px 33px;
@@ -186,6 +234,36 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    height: auto;
+    height: 100%;
+  }
+}
+
+.advantages__item--house {
+  @include mixins.advantages-icon-container;
+
+  &::before {
+    @include mixins.advantages-icon;
+
+    background-image: url("../img/index/icon_house.svg");
+  }
+}
+
+.advantages__item--burger {
+  @include mixins.advantages-icon-container;
+
+  &::before {
+    @include mixins.advantages-icon;
+
+    background-image: url("../img/index/icon_burger.svg");
+  }
+}
+
+.advantages__item--gift {
+  @include mixins.advantages-icon-container;
+
+  &::before {
+    @include mixins.advantages-icon;
+
+    background-image: url("../img/index/icon_gift.svg");
   }
 }

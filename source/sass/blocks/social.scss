@@ -42,6 +42,15 @@
   }
 }
 
+.social__icon {
+  transition: all 0.2s ease-in-out;
+}
+
 .social__icon path {
   fill: colors.$white-color;
+}
+
+
+.social__link:active .social__icon {
+  opacity: 0.3;
 }

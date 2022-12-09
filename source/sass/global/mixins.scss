@@ -1,3 +1,5 @@
+@use "../global/variables";
+
 @mixin title-m {
   font-size: 21px;
   line-height: 26px;
@@ -29,7 +31,7 @@
 
 @mixin title-tablet-l {
   font-size: 30px;
-  line-height: 36px;
+  line-height: 30px;
 }
 
 @mixin padding-0-18 {
@@ -38,4 +40,52 @@
 
 @mixin padding-0-20 {
   padding: 0 20px;
+}
+
+@mixin advantages-title-after {
+  display: block;
+  margin: 18px auto 18px;
+  width: 70px;
+  height: 21px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+@mixin advantages-icon {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 18px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: variables.$tablet-width) {
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 75px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    top: 69px;
+  }
+}
+
+@mixin advantages-icon-container {
+  position: relative;
+  padding-left: 65px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-left: 33px;
+    padding-top: 161px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 170px;
+  }
 }
