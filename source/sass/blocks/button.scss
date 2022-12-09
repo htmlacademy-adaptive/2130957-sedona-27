@@ -15,10 +15,27 @@
   padding: 16px 16px;
   border: none;
   transition: all 0.2s ease-in-out;
+  outline: none;
 
   &--primary {
     color: colors.$white-color;
     background-color: colors.$primary-color;
+
+    &:hover {
+      background-color: colors.$primary-color-hover;
+    }
+
+    &:focus {
+      background-color: colors.$primary-color-hover;
+    }
+
+    &:active {
+      background-color: colors.$primary-color-active;
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+    }
   }
 
   &--search-hotels {

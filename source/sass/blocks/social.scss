@@ -26,6 +26,20 @@
   align-items: center;
   height: 48px;
   background-color: colors.$primary-color;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+
+  &:hover {
+    background-color: colors.$primary-color-hover;
+  }
+
+  &:focus {
+    background-color: colors.$primary-color-hover;
+  }
+
+  &:active {
+    background-color: colors.$primary-color-active;
+  }
 }
 
 .social__icon path {

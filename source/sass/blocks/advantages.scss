@@ -27,23 +27,66 @@
     flex-direction: column-reverse;
     text-align: center;
   }
+
+  @media (min-width: variables.$tablet-width) {
+    width: calc(100% / 3);
+
+    &--large {
+      width: 100%;
+      flex-direction: row;
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
 .advantages__wrapper {
   padding: 0 18px 25px;
   box-sizing: border-box;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 60px 33px;
+    text-align: center;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 69px 50px;
+  }
 }
 
 .advantages__wrapper:nth-child(4) {
   padding-bottom: 46px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-bottom: 69px;
+  }
 }
 
 .advantages__item--large .advantages__wrapper {
   padding: 37px 18px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: calc(100% / 3);
+    padding: 42px 33px 41px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 52px 50px 51px;
+  }
 }
 
 .advantages__item--large:not(:last-child) {
   margin-bottom: 23px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__item--dark:first-child {
@@ -100,19 +143,49 @@
 
 .advantages__list--conditions .advantages__wrapper {
   padding: 24px 18px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 52px 33px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 52px 50px;
+  }
 }
 
 .advantages__list--conditions .advantages__wrapper:last-child {
   padding-bottom: 28px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-bottom: 52px;
+  }
 }
 
 .advantages__container {
   display: flex;
   justify-content: center;
   overflow: hidden;
+
+  @media (min-width: variables.$tablet-width) {
+    display: block;
+    width: calc(100% / 1.5);
+  }
 }
 
 .advantages__container-picture {
   display: block;
   object-fit: cover;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 100%;
+    height: 256px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    height: auto;
+  }
 }
