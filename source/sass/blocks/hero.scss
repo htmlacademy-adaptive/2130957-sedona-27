@@ -67,3 +67,8 @@
     padding: 0;
   }
 }
+
+.hero__image {
+  -webkit-user-select: none;
+  user-select: none;
+}

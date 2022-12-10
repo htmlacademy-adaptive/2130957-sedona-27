@@ -35,8 +35,17 @@
 }
 
 .video__description {
-  margin: 0 0 38px;
+  margin: 0 auto 38px;
   text-transform: uppercase;
+  padding: 0 30px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 45px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 125px;
+  }
 }
 
 .video__container {

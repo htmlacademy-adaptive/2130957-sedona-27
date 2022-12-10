@@ -15,6 +15,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28px;
+  }
+
+  &--checkbox {
+    @media (min-width: variables.$tablet-width) {
+      padding: 0 84px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      grid-template-columns: max-content max-content max-content max-content;
+      padding: 0 44.5px;
+      gap: 64px;
+    }
+  }
 }
 
 .control__label {
@@ -85,8 +102,4 @@
   }
 }
 
-.control--checkbox {
-  @media (min-width: variables.$tablet-width) {
-    padding: 0 84px;
-  }
-}
+
