@@ -31,6 +31,7 @@
 
     &:active {
       background-color: colors.$primary-color-active;
+      color: rgba(colors.$white-color, 30%);
     }
 
     &:disabled {

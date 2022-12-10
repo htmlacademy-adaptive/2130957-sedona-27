@@ -68,7 +68,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 80px;
-    height: 75px;
+    height: 80px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -88,4 +88,15 @@
   @media (min-width: variables.$desktop-width) {
     padding-top: 170px;
   }
+}
+
+@mixin form-icon {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-repeat: no-repeat;
+  background-color: #e6e6e6;
+  background-position: center;
 }
