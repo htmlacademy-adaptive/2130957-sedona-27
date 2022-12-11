@@ -1,0 +1,51 @@
+@use "../global/variables";
+@use "../global/mixins";
+@use "../global/colors";
+
+.error {
+  display: none;
+
+  @include mixins.popup;
+
+  &--active {
+    display: flex;
+  }
+}
+
+.error__wrapper {
+  width: 100%;
+  margin: auto;
+  padding: 45px 42px 35px 41px;
+  text-align: center;
+  background-color: colors.$white-color;
+  box-sizing: border-box;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 400px;
+    padding: 50px 47px 49px 48px;
+  }
+}
+
+.error__title {
+  margin: 0 0 30px;
+  text-transform: uppercase;
+
+  @include mixins.title-s;
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.title-tablet-l;
+  }
+}
+
+.error__description {
+  margin: 0 0 28px;
+  text-transform: uppercase;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 45px;
+  }
+}

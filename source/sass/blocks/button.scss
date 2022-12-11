@@ -51,4 +51,20 @@
       margin-bottom: 0;
     }
   }
+
+  &--error {
+    width: 180px;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 272px;
+    }
+  }
+
+  &--success {
+    width: 280px;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 458px;
+    }
+  }
 }
