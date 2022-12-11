@@ -48,6 +48,3 @@ submit.onclick = function () {
     form.submit();
   }
 };
-
-
-
