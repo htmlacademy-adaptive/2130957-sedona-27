@@ -915,6 +915,7 @@
 @media (min-width: 1200px) {
   .advantages__item--house {
     padding-top: 170px;
+    padding-left: 50px;
   }
 }
 .advantages__item--house::before {
@@ -956,6 +957,7 @@
 @media (min-width: 1200px) {
   .advantages__item--burger {
     padding-top: 170px;
+    padding-left: 50px;
   }
 }
 .advantages__item--burger::before {
@@ -997,6 +999,7 @@
 @media (min-width: 1200px) {
   .advantages__item--gift {
     padding-top: 170px;
+    padding-left: 50px;
   }
 }
 .advantages__item--gift::before {
