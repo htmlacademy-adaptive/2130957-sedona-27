@@ -254,10 +254,10 @@
   margin-left: 16px;
 }
 
-.form__input-required:invalid {
+.form__input--required:invalid {
   outline: 2px solid #ff0000;
 }
 
-.form__input-required:valid {
+.form__input--required:valid {
   outline: none;
 }
