@@ -40,11 +40,14 @@ buttonError.onclick = function () {
   error.classList.remove('error--active');
 }
 
-
 form.onsubmit = function (evt) {
   evt.preventDefault();
   if (firstName.value === "" || lastName.value === "" || phoneNumber.value === "" || email.value === "") {
     error.classList.add('error--active');
+    firstName.classList.add('form__input-required');
+    lastName.classList.add('form__input-required');
+    phoneNumber.classList.add('form__input-required');
+    email.classList.add('form__input-required');
     return false;
   } else {
     success.classList.add('success--active');
