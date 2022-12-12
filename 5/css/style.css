@@ -904,18 +904,20 @@
 
 .advantages__item--house {
   position: relative;
-  padding-left: 65px;
+}
+@media (max-width: 767px) {
+  .advantages__item--house {
+    padding-left: 65px;
+  }
 }
 @media (min-width: 768px) {
   .advantages__item--house {
-    padding-left: 33px;
     padding-top: 161px;
   }
 }
 @media (min-width: 1200px) {
   .advantages__item--house {
     padding-top: 170px;
-    padding-left: 50px;
   }
 }
 .advantages__item--house::before {
@@ -946,18 +948,20 @@
 
 .advantages__item--burger {
   position: relative;
-  padding-left: 65px;
+}
+@media (max-width: 767px) {
+  .advantages__item--burger {
+    padding-left: 65px;
+  }
 }
 @media (min-width: 768px) {
   .advantages__item--burger {
-    padding-left: 33px;
     padding-top: 161px;
   }
 }
 @media (min-width: 1200px) {
   .advantages__item--burger {
     padding-top: 170px;
-    padding-left: 50px;
   }
 }
 .advantages__item--burger::before {
@@ -988,18 +992,20 @@
 
 .advantages__item--gift {
   position: relative;
-  padding-left: 65px;
+}
+@media (max-width: 767px) {
+  .advantages__item--gift {
+    padding-left: 65px;
+  }
 }
 @media (min-width: 768px) {
   .advantages__item--gift {
-    padding-left: 33px;
     padding-top: 161px;
   }
 }
 @media (min-width: 1200px) {
   .advantages__item--gift {
     padding-top: 170px;
-    padding-left: 50px;
   }
 }
 .advantages__item--gift::before {
