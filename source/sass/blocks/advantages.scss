@@ -193,10 +193,14 @@
   padding: 24px 34px;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 52px 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 41px 33px;
   }
 
   @media (min-width: variables.$desktop-width) {
+    display: block;
     padding: 52px 50px;
   }
 }

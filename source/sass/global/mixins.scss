@@ -44,7 +44,7 @@
 
 @mixin advantages-title-after {
   display: block;
-  margin: 18px auto 18px;
+  margin: 18px auto 19px;
   width: 70px;
   height: 21px;
   font-size: 14px;
@@ -88,7 +88,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding-top: 170px;
+    padding-top: 177px;
   }
 }
 
