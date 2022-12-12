@@ -78,16 +78,17 @@
 
 @mixin advantages-icon-container {
   position: relative;
-  padding-left: 65px;
+
+  @media (max-width: 767px) {
+    padding-left: 65px;
+  }
 
   @media (min-width: variables.$tablet-width) {
-    padding-left: 33px;
     padding-top: 161px;
   }
 
   @media (min-width: variables.$desktop-width) {
     padding-top: 170px;
-    padding-left: 50px;
   }
 }
 
