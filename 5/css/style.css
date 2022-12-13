@@ -761,7 +761,7 @@
 .advantages__title--1::after {
   content: "— №1 —";
   display: block;
-  margin: 18px auto 18px;
+  margin: 18px auto 19px;
   width: 70px;
   height: 21px;
   font-size: 14px;
@@ -772,7 +772,7 @@
 .advantages__title--2::after {
   content: "— №2 —";
   display: block;
-  margin: 18px auto 18px;
+  margin: 18px auto 19px;
   width: 70px;
   height: 21px;
   font-size: 14px;
@@ -783,7 +783,7 @@
 .advantages__title--3::after {
   content: "— №3 —";
   display: block;
-  margin: 18px auto 18px;
+  margin: 18px auto 19px;
   width: 70px;
   height: 21px;
   font-size: 14px;
@@ -794,7 +794,7 @@
 .advantages__title--4::after {
   content: "— №4 —";
   display: block;
-  margin: 18px auto 18px;
+  margin: 18px auto 19px;
   width: 70px;
   height: 21px;
   font-size: 14px;
@@ -805,7 +805,7 @@
 .advantages__title--5::after {
   content: "— №5 —";
   display: block;
-  margin: 18px auto 18px;
+  margin: 18px auto 19px;
   width: 70px;
   height: 21px;
   font-size: 14px;
@@ -851,11 +851,15 @@
 }
 @media (min-width: 768px) {
   .advantages__list--conditions .advantages__wrapper {
-    padding: 52px 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 41px 33px;
   }
 }
 @media (min-width: 1200px) {
   .advantages__list--conditions .advantages__wrapper {
+    display: block;
     padding: 52px 50px;
   }
 }
@@ -917,7 +921,7 @@
 }
 @media (min-width: 1200px) {
   .advantages__item--house {
-    padding-top: 170px;
+    padding-top: 177px;
   }
 }
 .advantages__item--house::before {
@@ -961,7 +965,7 @@
 }
 @media (min-width: 1200px) {
   .advantages__item--burger {
-    padding-top: 170px;
+    padding-top: 177px;
   }
 }
 .advantages__item--burger::before {
@@ -1005,7 +1009,7 @@
 }
 @media (min-width: 1200px) {
   .advantages__item--gift {
-    padding-top: 170px;
+    padding-top: 177px;
   }
 }
 .advantages__item--gift::before {
