@@ -3,10 +3,101 @@
 @use "../global/mixins";
 @use "../global/colors";
 
+.control {
+  margin: 0;
+  list-style-type: none;
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28px;
+  }
+
+  &--checkbox {
+    @media (min-width: variables.$tablet-width) {
+      padding: 0 84px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      grid-template-columns: max-content max-content max-content max-content;
+      padding: 0 44.5px;
+      gap: 64px;
+    }
+  }
+}
+
 .control__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 46px;
+  padding-left: 62px;
   font-size: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 26px;
   font-weight: 700;
   color: colors.$black-color;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.control__mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  transition: all 0.2s ease-in-out;
+}
+
+.control--radio .control__mark {
+  border-radius: 50%;
+}
+
+.control--radio .control__input:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #333333;
+  transition: all 0.2s ease-in-out;
+}
+
+.control--checkbox .control__input:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/form/tick.svg");
+  transition: all 0.2s ease-in-out;
+}
+
+.control__input:hover + .control__mark {
+  background-color: colors.$form-input-hover;
+}
+
+.control__input:focus + .control__mark {
+  background-color: colors.$form-input-hover;
+}
+
+.control__label:active .control__mark {
+  background-color: colors.$form-input-active;
+
+  &::before {
+    opacity: 0.3;
+  }
 }

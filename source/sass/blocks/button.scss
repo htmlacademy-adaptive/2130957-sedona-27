@@ -15,10 +15,28 @@
   padding: 16px 16px;
   border: none;
   transition: all 0.2s ease-in-out;
+  outline: none;
 
   &--primary {
     color: colors.$white-color;
     background-color: colors.$primary-color;
+
+    &:hover {
+      background-color: colors.$primary-color-hover;
+    }
+
+    &:focus {
+      background-color: colors.$primary-color-hover;
+    }
+
+    &:active {
+      background-color: colors.$primary-color-active;
+      color: rgba(colors.$white-color, 30%);
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+    }
   }
 
   &--search-hotels {
@@ -28,5 +46,25 @@
   &--form {
     width: 100%;
     margin-bottom: 3px;
+
+    @media (min-width: variables.$tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--error {
+    width: 180px;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 272px;
+    }
+  }
+
+  &--success {
+    width: 280px;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 458px;
+    }
   }
 }

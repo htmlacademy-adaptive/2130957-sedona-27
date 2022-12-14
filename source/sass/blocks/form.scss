@@ -31,8 +31,13 @@
   box-sizing: border-box;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 0 0 48px;
+    padding: 0;
     width: 100%;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 56px;
   }
 }
 
@@ -49,9 +54,13 @@
 
   @media (min-width: variables.$tablet-width) {
     width: 50%;
-    padding: 0 43px 15px 0;
+    padding: 0 43px 0 0;
     border-top: 0;
     border-right: 1px solid #e5e5e5;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 63px 0 0;
   }
 }
 
@@ -60,38 +69,122 @@
     width: 50%;
     padding-left: 26px;
   }
-
-  @media (min-width: variables.$desktop-width) {
-    padding-left: 64px;
-  }
 }
 
 .form__label {
   display: block;
-  margin-bottom: 1px;
+  margin-bottom: 16px;
   text-transform: uppercase;
+
+  &--phone {
+    position: relative;
+
+    &::after {
+      @include mixins.form-icon;
+
+      background-image: url("../img/form/phone.svg");
+    }
+
+    @media (min-width: variables.$tablet-width) {
+      margin-left: 18px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      margin-left: 38px;
+    }
+  }
+
+  &--email {
+    position: relative;
+
+    &::after {
+      @include mixins.form-icon;
+
+      background-image: url("../img/form/mail.svg");
+    }
+
+    @media (min-width: variables.$tablet-width) {
+      margin-left: 18px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      margin-left: 38px;
+    }
+  }
 }
 
-.form__group input {
+.form__input {
+  width: 100%;
+  padding: 16px;
   font-size: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
-  line-height: 21px;
+  line-height: 26px;
   font-weight: 700;
   color: colors.$black-color;
+  background-color: #f2f2f2;
+  border: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+
+  &:hover {
+    background-color: colors.$form-input-hover;
+  }
+
+  &:focus {
+    background-color: colors.$form-input-hover;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #f2f2f2;
+    box-shadow: inset 0 0 0 4px #e5e5e5;
+  }
 }
 
 .form__title {
+  position: relative;
   margin: 0 0 20px;
+  text-align: center;
 
   @include mixins.title-s;
 
   @media (min-width: variables.$tablet-width) {
     @include mixins.title-tablet-m;
+    margin-bottom: 28px;
+
+    &--bordered::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 12.5px;
+      width: 19%;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    &--bordered::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 19%;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    &--bordered::before,
+    &--bordered::after {
+      width: 280px;
+    }
   }
 }
 
 .form__comment {
   width: 100%;
+  height: 150px;
   padding: 16px;
   font-size: 18px;
   line-height: 26px;
@@ -99,12 +192,38 @@
   border: none;
   background-color: #f2f2f2;
   box-sizing: border-box;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  resize: none;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 160px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 96px;
+    width: 768px;
+  }
+
+  &:hover {
+    background-color: colors.$form-input-hover;
+  }
+
+  &:focus {
+    background-color: colors.$form-input-hover;
+  }
+
+  &:active {
+    background-color: #f2f2f2;
+    box-shadow: inset 0 0 0 4px #e5e5e5;
+  }
 }
 
 .form__button-container {
   padding: variables.$hor-padding-s;
 
   @media (min-width: variables.$tablet-width) {
+    padding: 0;
     display: flex;
     width: 100%;
     align-items: center;
@@ -113,11 +232,32 @@
       width: 50%;
     }
   }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 96px;
+  }
 }
 
 .form__caption {
   font-size: 12px;
   line-height: 21px;
   text-align: right;
+  text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 14px;
+  }
+}
+
+.form__text {
+  margin-left: 16px;
+}
+
+.form__input--required:invalid {
+  outline: 2px solid #ff0000;
+}
+
+.form__input--required:valid {
+  outline: none;
 }
