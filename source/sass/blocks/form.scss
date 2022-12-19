@@ -261,3 +261,8 @@
 .form__input--required:valid {
   outline: none;
 }
+
+.form__label--phone .form__input,
+.form__label--email .form__input {
+  padding: 16px 58px 16px 16px;
+}
