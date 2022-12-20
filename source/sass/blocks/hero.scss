@@ -12,6 +12,10 @@
   background-size: 172%, 285%;
   background-color: rgba(131, 179, 211, 0.5);
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/divider.svg"), url("../img/index/hero_banner_1200x518@2x.jpg");
+  }
+
   @media (min-width: variables.$tablet-width) {
     padding: 77px 0 86px;
     background-size: 158%, 158%;
@@ -70,4 +74,17 @@
 
 .hero__image {
   user-select: none;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 460px;
+    height: 350px;
+  }
+}
+
+.hero--form .hero__image,
+.hero--catalog .hero__image {
+  @media (min-width: variables.$tablet-width) {
+    width: 460px;
+    height: 80px;
+  }
 }

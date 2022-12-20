@@ -65,6 +65,12 @@
 
   @media (min-width: variables.$tablet-width) {
     margin-bottom: 0;
+    width: 324px;
+    height: 267px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 400px;
   }
 }
 
@@ -156,5 +162,17 @@
 
   @media (min-width: variables.$desktop-width) {
     background-image: url("../img/catalog/liked_icon_light.svg");
+  }
+}
+
+.photo__item--large .photo__item-media {
+  @media (min-width: variables.$tablet-width) {
+    width: 648px;
+    height: 480px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1200px;
+    height: 400px;
   }
 }
