@@ -40,13 +40,13 @@
   <section class="hero">
     <div class="hero__wrapper">
       <h1 class="hero__title visually-hidden">Добро пожаловать в Седону.</h1>
-      <svg class="hero__icon hero__icon--flag" width="157.05" height="51.72">
+      <svg class="hero__icon hero__icon--flag" width="157.05" height="51.72" aria-hidden="true" focusable="false">
         <use xlink:href="img/sprite.svg#welcome_icon"></use>
       </svg>
-      <svg class="hero__icon" width="282" height="48.8">
+      <svg class="hero__icon" width="282" height="48.8" role="img" aria-label="Добро пожаловать в Седону." focusable="false">
         <use xlink:href="img/sprite.svg#sedona_icon"></use>
       </svg>
-      <svg class="hero__icon hero__icon--caption" width="173" height="45.6">
+      <svg class="hero__icon hero__icon--caption" width="173" height="45.6" aria-hidden="true" focusable="false">
         <use xlink:href="img/sprite.svg#sedona-caption"></use>
       </svg>
     </div>
@@ -63,9 +63,12 @@
       <li class="advantages__item advantages__item--large advantages__item--dark advantages__item--reverse">
         <div class="advantages__container">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/index/sedona_small_town.webp 1x, img/index/sedona_small_town@2x.webp 2x">
-            <source media="(min-width: 768px)" srcset="img/index/sedona_small_town_tablet.webp 1x, img/index/sedona_small_town_tablet@2x.webp 2x">
-            <img class="advantages__container-picture" src="img/index/sedona_small_town_mobile.webp" srcset="img/index/sedona_small_town_mobile@2x.webp 2x" width="520" height="260" alt="Настоящий городок Седона."  loading="lazy">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/sedona_small_town.webp 1x, img/index/sedona_small_town@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index/sedona_small_town_tablet.webp 1x, img/index/sedona_small_town_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index/sedona_small_town_mobile.webp 1x, img/index/sedona_small_town_mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/index/sedona_small_town.jpg 1x, img/index/sedona_small_town@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/index/sedona_small_town_tablet.jpg 1x, img/index/sedona_small_town_tablet@2x.jpg 2x">
+            <img class="advantages__container-picture" src="img/index/sedona_small_town_mobile.jpg" srcset="img/index/sedona_small_town_mobile@2x.jpg 2x" width="520" height="260" alt="Настоящий городок Седона."  loading="lazy">
           </picture>
         </div>
         <div class="advantages__wrapper">
@@ -88,10 +91,12 @@
       <li class="advantages__item advantages__item--dark advantages__item--large">
         <div class="advantages__container">
           <picture>
-            <source media="(max-width: 767px)" srcset="img/index/devil_bridge_mobile.webp 1x, img/index/devil_bridge_mobile@2x.webp 2x">
-            <source media="(max-width: 1199px)" srcset="img/index/devil_bridge_tablet.webp 1x, img/index/devil_bridge_tablet@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/index/devil_bridge.webp 1x, img/index/devil_bridge@2x.webp 2x">
-            <img class="advantages__container-picture" src="img/index/devil_bridge_mobile.webp" srcset="img/index/devil_bridge_mobile@2x.webp 2x" width="520" height="260" alt="Настоящий городок Седона."  loading="lazy">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/devil_bridge.webp 1x, img/index/devil_bridge@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index/devil_bridge_tablet.webp 1x, img/index/devil_bridge_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index/devil_bridge_mobile.webp 1x, img/index/devil_bridge_mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/index/devil_bridge.jpg 1x, img/index/devil_bridge@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/index/devil_bridge_tablet.jpg 1x, img/index/devil_bridge_tablet@2x.jpg 2x">
+            <img class="advantages__container-picture" src="img/index/devil_bridge_mobile.jpg" srcset="img/index/devil_bridge_mobile@2x.jpg 2x" width="520" height="260" alt="Настоящий городок Седона."  loading="lazy">
           </picture>
         </div>
         <div class="advantages__wrapper">
@@ -137,22 +142,22 @@
       <span class="social__title visually-hidden">Давайте дружить!</span>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy">
-            <svg class="social__icon" width="24" height="14">
+          <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" aria-label="Сайт группы ВКонтакте.">
+            <svg class="social__icon" width="24" height="14" role="img">
               <use xlink:href="img/sprite.svg#vk-icon"></use>
             </svg>
             <span class="visually-hidden">Мы в Вконтакте.</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://t.me/htmlacademy">
-            <svg class="social__icon" width="22" height="18">
+          <a class="social__link" href="https://t.me/htmlacademy" target="_blank" aria-label="Канал в Телеграме.">
+            <svg class="social__icon" width="22" height="18" role="img">
               <use xlink:href="img/sprite.svg#tg-icon"></use>
             </svg>
             <span class="visually-hidden">Мы в Телеграме.</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-            <svg class="social__icon" width="20" height="14">
+          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Канал на Ютубе.">
+            <svg class="social__icon" width="20" height="14" role="img">
               <use xlink:href="img/sprite.svg#youtube-icon"></use>
             </svg>
             <span class="visually-hidden">Мы в Ютубе.</span></a>
@@ -160,9 +165,9 @@
       </ul>
     </div>
     <div class="main-footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Academy">
         <span class="copyright__text">Разработано</span>
-        <svg class="social__icon" width="27" height="35">
+        <svg class="social__icon" width="27" height="35" role="img">
           <use xlink:href="img/sprite.svg#copyright-icon"></use>
         </svg>
         <span class="visually-hidden">HTML Academy.</span>
