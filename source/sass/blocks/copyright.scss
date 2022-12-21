@@ -35,18 +35,17 @@
 }
 
 .copyright__icon path {
-  fill: colors.$black-color;
-  transition: all 0.2s ease-in-out;
+  fill: currentColor;
 }
 
 .copyright__link:hover .copyright__icon path {
-  fill: colors.$primary-color;
+  fill: currentColor;
 }
 
 .copyright__link:focus .copyright__icon path {
-  fill: colors.$primary-color;
+  fill: currentColor;
 }
 
 .copyright__link:active .copyright__icon path {
-  fill: #b3b3b3;
+  fill: currentColor;
 }
