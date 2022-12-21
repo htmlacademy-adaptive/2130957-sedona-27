@@ -40,10 +40,15 @@
   <section class="hero">
     <div class="hero__wrapper">
       <h1 class="hero__title visually-hidden">Добро пожаловать в Седону.</h1>
-      <picture>
-        <source media="(min-width: 768px)" srcset="img/index/welcome.svg">
-        <img class="hero__image" width="282" height="214" src="img/index/welcome-phone.svg" alt="Добро пожаловать в Седону.">
-      </picture>
+      <svg class="hero__icon hero__icon--flag" width="157.05" height="51.72">
+        <use xlink:href="img/sprite.svg#welcome_icon"></use>
+      </svg>
+      <svg class="hero__icon" width="282" height="48.8">
+        <use xlink:href="img/sprite.svg#sedona_icon"></use>
+      </svg>
+      <svg class="hero__icon hero__icon--caption" width="173" height="45.6">
+        <use xlink:href="img/sprite.svg#sedona-caption"></use>
+      </svg>
     </div>
   </section>
   <section class="intro">
