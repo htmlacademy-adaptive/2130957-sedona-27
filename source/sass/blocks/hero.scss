@@ -16,12 +16,12 @@
   }
 
   @media (min-width: variables.$tablet-width) {
-    padding: 77px 0 92.49px;
-    background-size: 158%, 158%;
+    padding: 77px 0 93.49px;
+    background-size: 156%, 158%;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 78px 0 90.07px;
+    padding: 78px 0 93.07px;
     background-size: 100%, 100%;
   }
 
@@ -60,13 +60,13 @@
   margin: 0 auto;
 
   @media (min-width: variables.$tablet-width) {
-    width: 461px;
-    height: 79.1px;
+    width: 471px;
+    height: 80px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 459.5px;
-    height: 79.8px;
+    width: 478px;
+    height: 81px;
   }
 
   &--flag {
@@ -75,7 +75,7 @@
     @media (min-width: variables.$tablet-width) {
       width: 256.84px;
       height: 84.58px;
-      margin-bottom: 53.42px;
+      margin-bottom: 51.42px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -91,13 +91,13 @@
     @media (min-width: variables.$tablet-width) {
       width: 282.81px;
       height: 74.56px;
-      margin-top: 52.9px;
+      margin-top: 57px;
     }
 
     @media (min-width: variables.$desktop-width) {
       width: 281.89px;
       height: 74.57px;
-      margin-top: 59.7px;
+      margin-top: 56.7px;
     }
   }
 }

@@ -13,7 +13,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 61px 371px 66px;
+    padding: 58px 371px 66px;
   }
 }
 
@@ -32,6 +32,8 @@
   @include mixins.title-m;
 
   @media (min-width: variables.$tablet-width) {
+    margin: 0 0 31px;
+
     @include mixins.title-tablet-l;
   }
 }
@@ -40,4 +42,12 @@
   margin: 0 0 32px;
   padding: 0 9px;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0 0 41px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 45px;
+  }
 }
