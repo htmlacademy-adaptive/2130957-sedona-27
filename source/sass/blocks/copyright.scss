@@ -19,6 +19,10 @@
     margin-left: 18px;
   }
 
+  @media (min-width: variables.$desktop-width) {
+    margin-left: 20px;
+  }
+
   &:hover {
     color: colors.$primary-color;
   }

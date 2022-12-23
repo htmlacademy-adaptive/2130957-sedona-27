@@ -30,14 +30,14 @@
 
   &--form {
     padding-top: 36px;
-    padding-bottom: 24px;
+    padding-bottom: 26px;
 
     @media (min-width: variables.$tablet-width) {
       padding: 64px 166px 103px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      padding: 115px 382px 67px;
+      padding: 115px 382px 70px;
     }
   }
 }
@@ -82,3 +82,16 @@
     @include mixins.title-tablet-l;
   }
 }
+
+.intro--form .intro__title {
+  margin-bottom: 24px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 27px;
+  }
+}
+
