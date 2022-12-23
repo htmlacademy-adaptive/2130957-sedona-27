@@ -17,14 +17,14 @@
   }
 
   &--catalog {
-    padding: 37px 0 25px;
+    padding: 37px 0 34px;
 
     @media (min-width: variables.$tablet-width) {
-      padding: 66px 155px 67px;
+      padding: 64px 155px 81px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      padding: 100px 370px 65px;
+      padding: 96px 370px 90px;
     }
   }
 
@@ -43,7 +43,7 @@
 }
 
 .intro__title {
-  margin: 0 0 35px;
+  margin: 0 0 26px;
 
   @include mixins.title-s;
 
