@@ -1,6 +1,7 @@
 @use "../global/variables";
 @use "../global/mixins";
 @use "../global/colors";
+@use "../global/visually-hidden";
 
 .form {
   padding-bottom: 24px;
@@ -60,6 +61,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
+    width: 496px;
     padding: 0 63px 0 0;
   }
 }
@@ -69,11 +71,35 @@
     width: 50%;
     padding-left: 26px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 464px;
+  }
+}
+
+.form__group:first-child .form__title {
+  @media (min-width: variables.$tablet-width) {
+    padding-left: 40px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-left: 66px;
+  }
+}
+
+.form__group:nth-child(2) .form__title {
+  @media (min-width: variables.$tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-left: 68px;
+  }
 }
 
 .form__label {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   text-transform: uppercase;
 
   &--phone {
@@ -144,20 +170,21 @@
 
 .form__title {
   position: relative;
-  margin: 0 0 20px;
+  margin-top: 0;
+  margin-bottom: 16px;
   text-align: center;
 
   @include mixins.title-s;
 
   @media (min-width: variables.$tablet-width) {
     @include mixins.title-tablet-m;
-    margin-bottom: 28px;
+    margin-bottom: 23px;
 
     &--bordered::before {
       content: "";
       position: absolute;
       left: 0;
-      top: 12.5px;
+      top: 50%;
       width: 19%;
       height: 1px;
       background-color: #dbdbdb;
@@ -185,8 +212,10 @@
 .form__comment {
   width: 100%;
   height: 150px;
+  margin-top: 3px;
   padding: 16px;
   font-size: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 26px;
   font-weight: 700;
   border: none;
@@ -222,6 +251,10 @@
 .form__button-container {
   padding: variables.$hor-padding-s;
 
+  @media (max-width: 767px) {
+    margin-top: 26px;
+  }
+
   @media (min-width: variables.$tablet-width) {
     padding: 0;
     display: flex;
@@ -234,7 +267,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin: 0 96px;
+    margin: 0 96px 7px;
   }
 }
 
@@ -265,4 +298,37 @@
 .form__label--phone .form__input,
 .form__label--email .form__input {
   padding: 16px 58px 16px 16px;
+}
+
+.form__label--phone,
+.form__label--email {
+  margin-bottom: 8px;
+}
+
+.form__group:nth-child(4) {
+  padding-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.form__group:last-of-type {
+  margin-bottom: 44px;
+}
+
+.form__group:nth-of-type(3) {
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 75px;
+  }
+}
+
+.form__group:last-of-type .form__title {
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 27px;
+  }
 }

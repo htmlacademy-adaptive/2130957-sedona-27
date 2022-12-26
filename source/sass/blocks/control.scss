@@ -39,6 +39,7 @@
   display: flex;
   align-items: center;
   height: 46px;
+  padding-top: 2px;
   padding-left: 62px;
   font-size: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -99,5 +100,33 @@
 
   &::before {
     opacity: 0.3;
+  }
+}
+
+.control.control--radio {
+  @media (min-width: variables.$tablet-width) {
+    padding: 2px 35px 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 18px 20px 0 52px;
+    column-gap: 40px;
+  }
+}
+
+.control--checkbox .control__label {
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 6px;
+  }
+}
+
+.control.control--checkbox {
+  @media (min-width: variables.$tablet-width) and (max-width: 1199px) {
+    grid-template-columns: 224px 224px;
+    column-gap: 32px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 54px;
   }
 }

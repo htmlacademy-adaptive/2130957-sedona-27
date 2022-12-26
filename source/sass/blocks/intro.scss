@@ -3,7 +3,7 @@
 @use "../global/colors";
 
 .intro {
-  padding-top: 32px;
+  padding-top: 34px;
   padding-bottom: 16px;
   text-align: center;
   background-color: colors.$white-color;
@@ -17,37 +17,39 @@
   }
 
   &--catalog {
-    padding: 37px 0 25px;
+    padding: 37px 0 34px;
 
     @media (min-width: variables.$tablet-width) {
-      padding: 66px 155px 67px;
+      padding: 64px 155px 81px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      padding: 100px 370px 65px;
+      padding: 96px 370px 90px;
     }
   }
 
   &--form {
     padding-top: 36px;
-    padding-bottom: 24px;
+    padding-bottom: 26px;
 
     @media (min-width: variables.$tablet-width) {
       padding: 64px 166px 103px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      padding: 115px 382px 67px;
+      padding: 115px 382px 70px;
     }
   }
 }
 
 .intro__title {
-  margin: 0 0 35px;
+  margin: 0 0 26px;
 
   @include mixins.title-s;
 
   @media (min-width: variables.$tablet-width) {
+    margin: 0 0 30px;
+
     @include mixins.title-tablet-m;
   }
 }
@@ -78,5 +80,17 @@
 .intro--form .intro__title {
   @media (min-width: variables.$tablet-width) {
     @include mixins.title-tablet-l;
+  }
+}
+
+.intro--form .intro__title {
+  margin-bottom: 24px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 27px;
   }
 }

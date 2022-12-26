@@ -25,7 +25,7 @@
 }
 
 .video__title {
-  margin: 0 0 33px;
+  margin: 0 0 28px;
 
   @include mixins.title-s;
 
@@ -37,14 +37,15 @@
 .video__description {
   margin: 0 auto 38px;
   text-transform: uppercase;
-  padding: 0 30px;
+  padding: 0 22.5px;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 0 45px;
+    margin: 0 auto 88px;
+    padding: 0 93px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 0 125px;
+    padding: 0 170px;
   }
 }
 
@@ -57,7 +58,7 @@
     content: "";
     position: absolute;
     left: calc(50% - 23px);
-    bottom: calc(50% - 23px);
+    bottom: calc(50% - 28px);
     margin: auto;
     border: 48px solid transparent;
     border-top-width: 28px;

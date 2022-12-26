@@ -15,6 +15,14 @@
   transition: all 0.2s ease-in-out;
   outline: none;
 
+  @media (min-width: variables.$tablet-width) {
+    margin-left: 18px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-left: 20px;
+  }
+
   &:hover {
     color: colors.$primary-color;
   }
@@ -35,18 +43,17 @@
 }
 
 .copyright__icon path {
-  fill: colors.$black-color;
-  transition: all 0.2s ease-in-out;
+  fill: currentColor;
 }
 
 .copyright__link:hover .copyright__icon path {
-  fill: colors.$primary-color;
+  fill: currentColor;
 }
 
 .copyright__link:focus .copyright__icon path {
-  fill: colors.$primary-color;
+  fill: currentColor;
 }
 
 .copyright__link:active .copyright__icon path {
-  fill: #b3b3b3;
+  fill: currentColor;
 }
