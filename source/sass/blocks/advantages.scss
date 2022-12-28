@@ -60,14 +60,8 @@
 }
 
 .advantages__wrapper:nth-child(4) {
-  padding-bottom: 46px;
-
-  @media (min-width: variables.$tablet-width) {
-    padding-bottom: 60px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    padding-bottom: 69px;
+  @media (max-width: variables.$mobile-width) {
+    padding-bottom: 46px;
   }
 }
 

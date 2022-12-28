@@ -22,18 +22,24 @@
 
   @media (min-width: variables.$tablet-width) {
     width: 400px;
-    padding: 50px 47px 49px 48px;
+    padding: 37px 47px 48px 48px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 48px 47px 48px 47px;
   }
 }
 
 .error__title {
-  margin: 0 0 30px;
+  margin: 0 0 25px;
   text-transform: uppercase;
 
   @include mixins.title-s;
 
   @media (min-width: variables.$tablet-width) {
     @include mixins.title-tablet-l;
+    margin-bottom: 24px;
+    line-height: 40px;
   }
 }
 
@@ -42,7 +48,7 @@
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: variables.$desktop-width) {

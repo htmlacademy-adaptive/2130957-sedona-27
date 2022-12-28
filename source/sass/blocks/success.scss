@@ -24,15 +24,15 @@
 }
 
 .success__content {
-  padding: 44px 39px 34px 37px;
+  padding: 37px 39px 54px 37px;
   background-color: colors.$white-color;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 57px 99px 34px 97px;
+    padding: 55px 99px 47px 97px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 55px 99px 32px 97px;
+    padding: 54px 99px 45px 97px;
   }
 }
 
@@ -46,14 +46,18 @@
 }
 
 .success__title {
-  margin: 0 0 30px;
+  margin: 0 0 24px;
 
   @include mixins.title-s;
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 27px;
 
     @include mixins.title-tablet-l;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 30px;
   }
 }
 

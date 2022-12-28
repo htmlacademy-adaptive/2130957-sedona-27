@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Форма отзыва</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon_32x32.svg" sizes="32x32" type="image/svg+xml">
   <link rel="icon" href="img/favicon_180x180.png" sizes="180x180" type="image/png">
@@ -25,7 +25,7 @@
         <a class="main-navigation__list-link" href="index.html">Главная</a>
       </li>
       <li class="main-navigation__list-item">
-        <a class="main-navigation__list-link" href="catalog.html">Фото и видео</a>
+        <a class="main-navigation__list-link" href="photo.html">Фото и видео</a>
       </li>
       <li class="main-navigation__list-item main-navigation__list-item--active">
         <a class="main-navigation__list-link" href="form.html">Форма отзыва</a>
@@ -41,7 +41,7 @@
     <div class="hero__wrapper">
       <h1 class="hero__title visually-hidden">Форма отзыва.</h1>
       <svg class="hero__icon" width="230" height="40" role="img" aria-label="Добро пожаловать в Седону." focusable="false">
-        <use xlink:href="img/sprite.svg#sedona_icon"></use>
+        <use xlink:href="img/hero/hero.svg#sedona_icon"></use>
       </svg>
     </div>
   </section>
@@ -74,7 +74,7 @@
           <h3 class="form__title">Контактная информация:</h3>
           <label class="form__label form__label--phone" for="phone-number">
             <span class="form__text">Контактный телефон<sup>*</sup>:</span>
-            <input class="form__input" id="phone-number" name="phone-number" type="text" value="" placeholder="Введите телефон" required>
+            <input class="form__input" id="phone-number" name="phone-number" type="tel" value="" placeholder="Введите телефон" required  oninput="this.value = this.value.replace(/[^0-9\+]/g, '');">
           </label>
           <label class="form__label form__label--email" for="email">
             <span class="form__text">Электронная почта<sup>*</sup>:</span>

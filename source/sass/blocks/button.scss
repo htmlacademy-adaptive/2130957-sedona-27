@@ -40,7 +40,7 @@
   }
 
   &--search-hotels {
-    width: 100%;
+    display: block;
   }
 
   &--form {
@@ -62,9 +62,11 @@
 
   &--success {
     width: 280px;
+    font-size: 18px;
 
     @media (min-width: variables.$tablet-width) {
       width: 458px;
+      font-size: 21px;
     }
   }
 }
