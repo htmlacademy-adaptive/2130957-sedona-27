@@ -15,6 +15,9 @@
   position: relative;
   height: 350px;
   overflow: hidden;
+  background-image: url("../img/index/map.webp");
+  background-repeat: no-repeat;
+  background-position: center;
 
   iframe {
     position: absolute;
