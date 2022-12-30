@@ -2,7 +2,19 @@
 "short_name": "Седона",
   "name": "Седона - небольшой городок в Аризоне, заслуживающий большего!",
   "icons": [
-    { "src": "img/favicon_192x192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "img/favicon_192x192.png", "type": "image/png", "sizes": "192x192", "purpose": "any maskable" },
     { "src": "img/favicon_512x512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "background_color": "#81b3d2",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "index.html",
+  "theme_color": "#81b3d2",
+  "prefer_related_applications": true,
+  "related_applications": [
+      {
+      "platform": "web",
+      "url": "https://htmlacademy.ru/"
+      }
   ]
 }
