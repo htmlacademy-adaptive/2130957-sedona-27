@@ -5,14 +5,14 @@
 .hero {
   padding: 90px 0 85px;
   text-align: center;
-  background-image: url("../img/divider.svg"), url("../img/index/hero_banner_1200x518.jpg");
+  background-image: url("../img/divider.svg"), url("../img/index/hero_banner_1200x518.webp");
   background-repeat: no-repeat;
   background-position: 50% 100%, 50% 25%;
   background-size: 172%, 285%;
   background-color: rgba(131, 179, 211, 0.5);
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/divider.svg"), url("../img/index/hero_banner_1200x518@2x.jpg");
+    background-image: url("../img/divider.svg"), url("../img/index/hero_banner_1200x518@2x.webp");
   }
 
   @media (min-width: variables.$tablet-width) {
