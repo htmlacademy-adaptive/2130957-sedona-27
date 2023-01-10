@@ -20,7 +20,7 @@
 
   @media (min-width: variables.$tablet-width) {
     display: grid;
-    grid-template-columns: 153px 153px 1fr 153px 153px;
+    grid-template-columns: 19.92% 19.92% 1fr 19.92% 19.92%;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -67,7 +67,6 @@
   }
 
   @media (min-width: variables.$tablet-width) {
-    width: 133px;
     padding: 18px 0 17px;
     font-size: 14px;
     line-height: 21px;
@@ -251,7 +250,6 @@
 
 .main-navigation__list-item:nth-child(4n+3) {
   @media (min-width: variables.$tablet-width) {
-    justify-self: end;
     grid-column-start: 4;
   }
 }

@@ -232,8 +232,6 @@
 }
 
 .advantages__container {
-  display: flex;
-  justify-content: center;
   overflow: hidden;
 
   @media (min-width: variables.$tablet-width) {
@@ -245,9 +243,9 @@
 .advantages__container-picture {
   display: block;
   object-fit: cover;
+  width: 100%;
 
   @media (min-width: variables.$tablet-width) {
-    width: 100%;
     height: 256px;
   }
 
