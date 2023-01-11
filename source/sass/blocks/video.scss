@@ -53,20 +53,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: calc(50% - 23px);
-    bottom: calc(50% - 28px);
-    margin: auto;
-    border: 48px solid transparent;
-    border-top-width: 28px;
-    border-bottom-width: 28px;
-    border-left-color: rgba(colors.$white-color, 70%);
-    border-right: 0;
-    cursor: pointer;
-  }
 }
 
 .video__thumbnail {
@@ -80,4 +66,19 @@
   @media (min-width: variables.$desktop-width) {
     width: 800px;
   }
+}
+
+.video__button {
+  content: "";
+  position: absolute;
+  left: calc(50% - 23px);
+  bottom: calc(50% - 28px);
+  margin: auto;
+  background: none;
+  border: 48px solid transparent;
+  border-top-width: 28px;
+  border-bottom-width: 28px;
+  border-left-color: rgba(colors.$white-color, 70%);
+  border-right: 0;
+  cursor: pointer;
 }

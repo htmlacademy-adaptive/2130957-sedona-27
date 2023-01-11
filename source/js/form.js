@@ -19,7 +19,7 @@ buttonError.onclick = function () {
 
 form.onsubmit = function (evt) {
   evt.preventDefault();
-  if (firstName.value === "" || lastName.value === "" || phoneNumber.value === "" || email.value === "") {
+  if (firstName.value === '' || lastName.value === '' || phoneNumber.value === '' || email.value === '') {
     error.classList.add('error--active');
     firstName.classList.add('form__input--required');
     lastName.classList.add('form__input--required');

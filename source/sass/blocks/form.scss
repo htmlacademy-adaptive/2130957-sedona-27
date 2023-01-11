@@ -158,11 +158,6 @@
   }
 
   &:focus {
-    background-color: colors.$form-input-hover;
-    outline: none;
-  }
-
-  &:active {
     background-color: #f2f2f2;
     box-shadow: inset 0 0 0 4px #e5e5e5;
   }
