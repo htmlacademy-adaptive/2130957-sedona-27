@@ -9,7 +9,7 @@
   box-sizing: border-box;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 61px 155px 58px;
+    padding: 58px 155px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -26,7 +26,7 @@
 }
 
 .search-hotels__title {
-  margin: 0 0 23px;
+  margin: 0 0 22px;
   padding: 0 9px;
 
   @include mixins.title-m;

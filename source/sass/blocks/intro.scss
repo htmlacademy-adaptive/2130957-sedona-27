@@ -13,7 +13,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 58px 357px 44px;
+    padding: 60px 357px 43px;
   }
 
   &--catalog {
@@ -43,7 +43,7 @@
 }
 
 .intro__title {
-  margin: 0 0 26px;
+  margin: 0 0 35px;
 
   @include mixins.title-s;
 

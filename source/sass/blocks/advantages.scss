@@ -200,7 +200,7 @@
 }
 
 .advantages__list--conditions .advantages__wrapper {
-  padding: 24px 34px;
+  padding: 25px 34px 24px;
 
   @media (min-width: variables.$tablet-width) {
     padding: 41px 33px;
@@ -213,11 +213,10 @@
 }
 
 .advantages__list--conditions .advantages__wrapper:last-child {
-  padding-bottom: 33px;
-  padding-top: 41px;
+  padding-bottom: 28px;
 
   @media (min-width: variables.$tablet-width) {
-    padding-bottom: 33px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -227,8 +226,10 @@
 }
 
 .advantages__list--conditions .advantages__wrapper:first-child {
-  padding-bottom: 41px;
-  padding-top: 63px;
+  @media (min-width: variables.$desktop-width) {
+    padding-bottom: 41px;
+    padding-top: 63px;
+  }
 }
 
 .advantages__container {
@@ -256,7 +257,19 @@
 }
 
 .advantages__item--house {
-  @include mixins.advantages-icon-container;
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding-left: 65px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 158px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 169px;
+  }
 
   &::before {
     @include mixins.advantages-icon;
@@ -266,7 +279,19 @@
 }
 
 .advantages__item--burger {
-  @include mixins.advantages-icon-container;
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding-left: 65px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 156px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 169px;
+  }
 
   &::before {
     @include mixins.advantages-icon;
@@ -276,25 +301,66 @@
 }
 
 .advantages__item--gift {
-  @include mixins.advantages-icon-container;
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding-left: 65px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 146px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 169px;
+  }
 
   &::before {
-    @include mixins.advantages-icon;
-
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 18px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-image: url("../img/index/icon_gift.svg");
+
+    @media (min-width: variables.$tablet-width) {
+      top: 59px;
+      left: 51%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 80px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      top: 68px;
+      left: 50%;
+      background-image: url("../img/index/icon_gift_desktop.svg");
+    }
   }
 }
 
 .advantages__item--house .advantages__title,
-.advantages__item--burger .advantages__title,
+.advantages__item--burger .advantages__title {
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
 .advantages__item--gift .advantages__title {
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 21px;
   }
 }
 
 .advantages__list--conditions .advantages__title {
   @media (min-width: variables.$tablet-width) {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
     margin-bottom: 25px;
   }
 }

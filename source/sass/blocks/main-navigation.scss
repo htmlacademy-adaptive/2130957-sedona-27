@@ -39,7 +39,7 @@
 
 .main-navigation__list-link {
   display: block;
-  padding: 17px;
+  padding: 18px 17px 10px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -121,8 +121,6 @@
 }
 
 .main-navigation__list-item--active .main-navigation__list-link {
-  background-color: colors.$gray-dark;
-  border-top: 1px solid colors.$gray-dark;
 
   &:hover {
     background-color: colors.$gray-dark;
