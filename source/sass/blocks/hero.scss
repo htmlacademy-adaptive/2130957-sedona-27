@@ -30,7 +30,7 @@
     background-position: 50% 100%, 50% 100%;
 
     @media (min-width: variables.$tablet-width) {
-      padding: 95px 0 115px;
+      padding: 95px 0 116px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -102,12 +102,5 @@
       margin-top: 52.7px;
       padding-left: 4px;
     }
-  }
-}
-
-.hero--inner .hero__icon {
-  @media (min-width: variables.$tablet-width) {
-    width: 471px;
-    height: 81px;
   }
 }
