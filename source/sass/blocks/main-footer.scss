@@ -8,7 +8,7 @@
   text-align: center;
   background-color: colors.$white-color;
 
-  @media (width: variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     padding: 36px 0;
   }
 }
@@ -34,11 +34,28 @@
 
   @media (min-width: variables.$tablet-width) {
     width: 166px;
-    margin-right: 95px;
+    margin-right: 97px;
     margin-bottom: 0;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-right: 251px;
+    margin-right: 255px;
+    padding-top: 6px;
+  }
+}
+
+.main-footer--inner .main-footer__tagline {
+  @media (min-width: variables.$tablet-width) {
+    margin-right: 95px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-right: 252px;
+  }
+}
+
+.main-footer--inner .main-footer__social {
+  @media (min-width: variables.$tablet-width) {
+    margin-right: 18px;
   }
 }

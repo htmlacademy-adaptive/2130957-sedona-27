@@ -39,12 +39,13 @@
 
 .main-navigation__list-link {
   display: block;
-  padding: 17px;
+  padding: 18px 17px 10px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: colors.$white-color;
   background-color: colors.$primary-color;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
@@ -120,9 +121,6 @@
 }
 
 .main-navigation__list-item--active .main-navigation__list-link {
-  background-color: colors.$gray-dark;
-  border-top: 1px solid colors.$gray-dark;
-
   &:hover {
     background-color: colors.$gray-dark;
   }

@@ -84,22 +84,6 @@
   }
 }
 
-@mixin advantages-icon-container {
-  position: relative;
-
-  @media (max-width: 767px) {
-    padding-left: 65px;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    padding-top: 155px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    padding-top: 169px;
-  }
-}
-
 @mixin form-icon {
   content: "";
   position: absolute;

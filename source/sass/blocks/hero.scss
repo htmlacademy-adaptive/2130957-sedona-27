@@ -8,7 +8,7 @@
   background-image: url("../img/divider.svg"), url("../img/index/hero_banner_1200x518.webp");
   background-repeat: no-repeat;
   background-position: 50% 100%, 50% 25%;
-  background-size: 172%, 285%;
+  background-size: 172%, 282%;
   background-color: rgba(131, 179, 211, 0.5);
 
   @media (min-resolution: 2dppx) {
@@ -16,12 +16,12 @@
   }
 
   @media (min-width: variables.$tablet-width) {
-    padding: 77px 0 93.49px;
-    background-size: 156%, 158%;
+    padding: 77px 0 90px;
+    background-size: 156%, 156%;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 78px 0 93.07px;
+    padding: 78px 0 90.43px;
     background-size: 100%, 100%;
   }
 
@@ -30,7 +30,7 @@
     background-position: 50% 100%, 50% 100%;
 
     @media (min-width: variables.$tablet-width) {
-      padding: 95px 0 115px;
+      padding: 95px 0 116px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -86,25 +86,21 @@
   }
 
   &--caption {
-    margin-top: 36.5px;
+    margin-top: 34px;
+    padding-right: 11px;
 
     @media (min-width: variables.$tablet-width) {
-      width: 282.81px;
-      height: 74.56px;
-      margin-top: 57px;
+      width: 295px;
+      height: 80px;
+      margin-top: 55px;
+      padding-right: 20px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      width: 281.89px;
-      height: 74.57px;
-      margin-top: 56.7px;
+      width: 295px;
+      height: 80px;
+      margin-top: 52.7px;
+      padding-left: 4px;
     }
-  }
-}
-
-.hero--inner .hero__icon {
-  @media (min-width: variables.$tablet-width) {
-    width: 471px;
-    height: 81px;
   }
 }

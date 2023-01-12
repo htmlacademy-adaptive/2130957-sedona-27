@@ -4,9 +4,9 @@ let mainHeaderLogo = document.querySelector('.main-header__logo');
 let mainHeader = document.querySelector('.main-header');
 let likes = document.querySelectorAll('.photo__item-likes');
 
-mainHeader.style.minHeight = "56px";
-mainHeaderLogo.style.top = "0";
-mainNavigationToggle.style.display = "block";
+mainHeader.style.minHeight = '56px';
+mainHeaderLogo.style.top = '0';
+mainNavigationToggle.style.display = 'block';
 mainNavigation.classList.remove('main-navigation--active');
 mainNavigationToggle.onclick = function () {
   mainNavigation.classList.toggle('main-navigation--active');
@@ -24,7 +24,7 @@ window.addEventListener('scroll', function() {
     ok = true;
     setTimeout(() => {
       mapContainer.append(mapIframe);
-      mapContainer.style.backgroundImage = "none";
+      mapContainer.style.backgroundImage = 'none';
     }, 500)
   }
 });

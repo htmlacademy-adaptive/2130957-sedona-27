@@ -8,6 +8,7 @@
   <meta name="theme-color" content="#81b3d2"/>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="img/index/hero_banner_1200x518.webp" as="image">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon_32x32.svg" sizes="32x32" type="image/svg+xml">
@@ -73,7 +74,7 @@
           <div class="photo__item-content">
             <h3 class="photo__item-title">Неродные просторы</h3>
             <p class="photo__item-description">Автор фото: Борис</p>
-            <div class="photo__item-likes">1350</div>
+            <button type="button" class="photo__item-likes">1350</button>
           </div>
         </div>
       </li>
@@ -92,7 +93,7 @@
           <div class="photo__item-content">
             <h3 class="photo__item-title">Местная растительность</h3>
             <p class="photo__item-description">Автор фото: Сергей</p>
-            <div class="photo__item-likes">143</div>
+            <button type="button" class="photo__item-likes">143</button>
           </div>
         </div>
       </li>
@@ -111,7 +112,7 @@
           <div class="photo__item-content">
             <h3 class="photo__item-title">Дорога на север</h3>
             <p class="photo__item-description">Автор фото: Пётр</p>
-            <div class="photo__item-likes">96</div>
+            <button type="button" class="photo__item-likes">96</button>
           </div>
         </div>
       </li>
@@ -121,7 +122,7 @@
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/bridge_of_devil.webp 1x, img/catalog/bridge_of_devil@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/bridge_of_devil_tablet.webp 1x, img/catalog/bridge_of_devil_tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/catalog/bridge_of_devil_tablet.mobile.webp 1x, img/catalog/bridge_of_devil_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/bridge_of_devil_mobile.webp 1x, img/catalog/bridge_of_devil_mobile@2x.webp 2x">
               <source  media="(min-width: 1200px)" srcset="img/catalog/bridge_of_devil.jpg 1x, img/catalog/bridge_of_devil@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/bridge_of_devil_tablet.jpg 1x, img/catalog/bridge_of_devil_tablet@2x.jpg 2x">
               <img class="photo__item-media" src="img/catalog/bridge_of_devil_mobile.jpg" srcset="img/catalog/bridge_of_devil_mobile@2x.jpg 2x" width="280" height="280" alt="Мост Дьявола." loading="lazy">
@@ -130,7 +131,7 @@
           <div class="photo__item-content">
             <h3 class="photo__item-title">Мост Дьявола</h3>
             <p class="photo__item-description">Автор фото: Антон</p>
-            <div class="photo__item-likes">254</div>
+            <button type="button" class="photo__item-likes">254</button>
           </div>
         </div>
       </li>
@@ -149,11 +150,12 @@
           <source media="(min-width: 768px)" srcset="img/catalog/video_thumbnail_tablet.jpg">
           <img class="video__thumbnail" src="img/catalog/video_thumbnail_mobile.jpg" width="280" height="177" alt="Видеопрезентация." loading="lazy">
         </picture>
+        <button type="button" class="video__button"></button>
         </div>
     </div>
   </section>
 </main>
-<footer class="main-footer">
+<footer class="main-footer main-footer--inner">
   <div class="main-footer__wrapper">
     <div class="main-footer__tagline">#visitsedona</div>
     <div class="main-footer__social social">
@@ -185,7 +187,7 @@
     <div class="main-footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="copyright__text">Разработано</span>
-        <svg class="social__icon" width="27" height="35" role="img">
+        <svg class="copyright__icon" width="27" height="35" role="img">
           <use xlink:href="img/sprite.svg#copyright-icon"></use>
         </svg>
         <span class="visually-hidden">HTML Academy.</span>

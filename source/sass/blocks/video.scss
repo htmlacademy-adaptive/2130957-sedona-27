@@ -12,7 +12,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 0 199px 92px;
+    padding: 0 199px 84px;
   }
 }
 
@@ -32,6 +32,10 @@
   @media (min-width: variables.$tablet-width) {
     @include mixins.title-tablet-l;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .video__description {
@@ -40,12 +44,13 @@
   padding: 0 22.5px;
 
   @media (min-width: variables.$tablet-width) {
-    margin: 0 auto 88px;
+    margin: 0 auto 90px;
     padding: 0 93px;
   }
 
   @media (min-width: variables.$desktop-width) {
     padding: 0 170px;
+    margin-bottom: 87px;
   }
 }
 
@@ -53,20 +58,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: calc(50% - 23px);
-    bottom: calc(50% - 28px);
-    margin: auto;
-    border: 48px solid transparent;
-    border-top-width: 28px;
-    border-bottom-width: 28px;
-    border-left-color: rgba(colors.$white-color, 70%);
-    border-right: 0;
-    cursor: pointer;
-  }
 }
 
 .video__thumbnail {
@@ -79,5 +70,29 @@
 
   @media (min-width: variables.$desktop-width) {
     width: 800px;
+  }
+}
+
+.video__button {
+  content: "";
+  position: absolute;
+  left: calc(50% - 23px);
+  bottom: calc(50% - 27px);
+  margin: auto;
+  background: none;
+  border: 46px solid transparent;
+  border-top-width: 26px;
+  border-bottom-width: 26px;
+  border-left-color: rgba(colors.$white-color, 70%);
+  border-right: 0;
+  cursor: pointer;
+
+  @media (min-width: variables.$desktop-width) {
+    left: calc(50% - 24px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #83b3d3;
+    outline-offset: 0;
   }
 }

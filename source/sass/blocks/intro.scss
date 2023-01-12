@@ -13,37 +13,37 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 58px 357px 44px;
+    padding: 60px 357px 43px;
   }
 
   &--catalog {
-    padding: 37px 0 34px;
+    padding: 37px 0 36px;
 
     @media (min-width: variables.$tablet-width) {
       padding: 64px 155px 81px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      padding: 96px 370px 90px;
+      padding: 96px 370px 89px;
     }
   }
 
   &--form {
     padding-top: 36px;
-    padding-bottom: 26px;
+    padding-bottom: 27px;
 
     @media (min-width: variables.$tablet-width) {
-      padding: 64px 166px 103px;
+      padding: 62px 166px 101px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      padding: 115px 382px 70px;
+      padding: 112px 382px 67px;
     }
   }
 }
 
 .intro__title {
-  margin: 0 0 26px;
+  margin: 0 0 35px;
 
   @include mixins.title-s;
 
@@ -57,6 +57,12 @@
 .intro__subtitle {
   margin: 0;
   text-transform: uppercase;
+}
+
+.intro--form .intro__subtitle {
+  @media (min-width: variables.$tablet-width) {
+    line-height: 24px;
+  }
 }
 
 .intro__wrapper {
@@ -78,8 +84,16 @@
 
 .intro--catalog .intro__title,
 .intro--form .intro__title {
+  margin-bottom: 25px;
+
   @media (min-width: variables.$tablet-width) {
+    margin-bottom: 29px;
+
     @include mixins.title-tablet-l;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 31px;
   }
 }
 
