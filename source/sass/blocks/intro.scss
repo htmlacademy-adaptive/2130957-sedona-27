@@ -17,14 +17,14 @@
   }
 
   &--catalog {
-    padding: 37px 0 34px;
+    padding: 37px 0 36px;
 
     @media (min-width: variables.$tablet-width) {
       padding: 64px 155px 81px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      padding: 96px 370px 90px;
+      padding: 96px 370px 89px;
     }
   }
 
@@ -78,8 +78,16 @@
 
 .intro--catalog .intro__title,
 .intro--form .intro__title {
+  margin-bottom: 25px;
+
   @media (min-width: variables.$tablet-width) {
+    margin-bottom: 29px;
+
     @include mixins.title-tablet-l;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 31px;
   }
 }
 

@@ -43,3 +43,20 @@
     padding-top: 6px;
   }
 }
+
+.main-footer--inner .main-footer__tagline {
+  @media (min-width: variables.$tablet-width) {
+    margin-right: 95px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-right: 252px;
+  }
+}
+
+.main-footer--inner .main-footer__social {
+  @media (min-width: variables.$tablet-width) {
+    margin-right: 18px;
+  }
+}
+

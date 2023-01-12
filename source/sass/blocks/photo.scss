@@ -6,7 +6,7 @@
   background-color: colors.$white-color;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 0 60px 58px;
+    padding: 0 60px 55px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -15,8 +15,9 @@
 }
 
 .photo__item {
-  padding: 25px 20px 26px;
+  padding: 24px 20px 26px;
   border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
 
   @media (min-width: variables.$tablet-width) {
     padding: 0;
@@ -81,14 +82,14 @@
   @media (min-width: variables.$tablet-width) {
     display: grid;
     grid-template-columns: 1fr max-content;
-    padding: 22px 25px 15px;
+    padding: 22px 20px 16px;
     background-color: #f2f2f2;
   }
 
   @media (min-width: variables.$desktop-width) {
     position: absolute;
     bottom: 0;
-    padding: 18px 20px 18px 25px;
+    padding: 18px 20px 17px 25px;
     background-color: rgba(colors.$black-color, 30%);
   }
 }
@@ -96,24 +97,19 @@
 .photo__item--large .photo__item-content {
   @media (min-width: variables.$desktop-width) {
     position: absolute;
-    bottom: 1px;
-    padding: 22px 20px 15px;
+    padding: 20px 20px 14px;
     background-color: rgba(colors.$black-color, 30%);
   }
 }
 
 .photo__item-title {
   grid-column-start: 1;
-  margin: 0 0 2px;
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   color: colors.$black-color;
   text-transform: uppercase;
-
-  @media (min-width: variables.$tablet-width) {
-    margin: 0;
-  }
 
   @media (min-width: variables.$desktop-width) {
     margin-bottom: 3px;
@@ -123,7 +119,7 @@
 
 .photo__item-description {
   grid-column-start: 1;
-  margin: 0 0 11px;
+  margin: 0 0 13px;
 
   @media (min-width: variables.$tablet-width) {
     margin: 0;
@@ -145,6 +141,7 @@
   cursor: pointer;
   background: transparent;
   border: none;
+  letter-spacing: 0.04em;
 
   &::before {
     content: "";
@@ -157,13 +154,26 @@
     background-repeat: no-repeat;
   }
 
-  @media (min-width: variables.$desktop-width) {
-    color: colors.$white-color;
+  @media (min-width: variables.$tablet-width) {
+    line-height: 30px;
 
     &::before {
-      margin-right: 11px;
+      margin-right: 9px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    color: colors.$white-color;
+    padding-top: 2px;
+
+    &::before {
       background-image: url("../img/catalog/like_icon_light.svg");
     }
+  }
+
+  &:focus-visible {
+    outline: 2px solid #83b3d3;
+    outline-offset: 0;
   }
 }
 
@@ -189,6 +199,12 @@
   }
 }
 
+.photo__item--large .photo__item-likes {
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 0;
+  }
+}
+
 .photo__item--large .photo__item-media {
   @media (min-width: variables.$tablet-width) {
     width: 648px;
@@ -198,5 +214,12 @@
   @media (min-width: variables.$desktop-width) {
     width: 1200px;
     height: 400px;
+  }
+}
+
+.photo__link {
+  &:focus-visible {
+    outline: 2px solid #83b3d3;
+    outline-offset: 0;
   }
 }
